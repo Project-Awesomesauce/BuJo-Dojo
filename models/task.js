@@ -16,8 +16,11 @@ module.exports = function(sequelize, DataTypes) {
         setDate: {
             type: DataTypes.STRING,
             allowNull: true
-            // Insert defaultValue here eventually? Issue would also (likely) be solved by implementing
-            // a calendar for user to select from that defaults to the current date.
+                // To make setDate default to current date, use the following code instead:
+                // type: DataTypes.DATE,
+                // allowNull: false,
+                // defaultValue: DataTypes.NOW
+                // Leaving this commented in case we use a calendar option and would prefer a Unix date string.
         }
     });
     return Task;
