@@ -8,19 +8,21 @@
   {{!--task creation--}}
   <div class="row">
     <div class="one-half column">
-      <input type="text" id="item-text" name="item">
-      <button id="add-item" type="submit">Add Task</button>
+      <form>
+        <input type="text" id="item-text" name="item">
+        <button id="add-item" type="submit">Add Task</button>
+      </form>
     </div>
   </div>
   {{!--task view--}}
   <div class="row">
-    <div class="one-half column">
+    <div id="item-list" class="one-half column">
       <ul>
         {{#each tasks}}
-        <li class="{{completed}}">{{item}}
+        <li><span class="{{completed}} list-item">{{item}}</span>
           <button data-id="{{id}}" class="destroy-item" type="submit">X</button>
           <button data-id="{{id}}" class="edit-item" type="submit">Edit</button>
-        </li>
+          </li>
         {{/each}}
       </ul>
     </div>
