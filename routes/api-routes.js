@@ -42,7 +42,7 @@ module.exports = function (app) {
       });
   });
 
-  app.delete('api/tasks/:id', function (req, res) {
+  app.delete('/api/tasks/:id', function (req, res) {
     db.Task.destroy({
       where: {
         id: req.params.id

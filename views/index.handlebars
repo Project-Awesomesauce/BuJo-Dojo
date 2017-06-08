@@ -17,8 +17,8 @@
     <div class="one-half column">
       <ul>
         {{#each tasks}}
-        <li>{{this.item}}
-          <button id="destroy-item" type="submit">X</button>
+        <li class="{{completed}}">{{item}}
+          <button data-id="{{id}}" class="destroy-item" type="submit">X</button>
         </li>
         {{/each}}
       </ul>
