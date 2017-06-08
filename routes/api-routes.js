@@ -17,23 +17,36 @@ module.exports = function(app) {
 	});
   });
 
-  app.update('/api/tasks/:item', function(req, res) {
-	var taskItem = req.params.item;
+  // Put route for changing a task's completed status
+  app.put('/api/tasks/:id', function(req, res) {
 	db.Task.update({
 	  completed: true
 	}, { 
 	  where : {
-	    item: taskItem
+	    id: req.params.id
 	  }
 	}).then(function(dbTask) {
 	  res.json(dbTask);
 	});
   });
 
-  app.delete('api/tasks/:item', function(req, res) {
+  // Put route for editing a task
+  app.put('/api/tasks', function(req, res) {
+	db.Task.update(
+	  req.body,
+	  {
+	  	where : {
+	      id: req.body.id
+	  	}
+	}).then(function(dbTask) {
+	  res.json(dbTask);
+	});
+  });
+
+  app.delete('api/tasks/:id', function(req, res) {
     db.Task.destroy({
   	  where: {
-  	    item: req.params.item
+  	    id: req.params.id
   	  }
     }).then(function(dbTask) {
   	  res.json(dbTask);
