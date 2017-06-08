@@ -18,12 +18,12 @@ module.exports = function(app) {
   });
 
   // Put route for changing a task's completed status
-  app.put('/api/tasks/:item', function(req, res) {
+  app.put('/api/tasks/:id', function(req, res) {
 	db.Task.update({
 	  completed: true
 	}, { 
 	  where : {
-	    item: req.params.item
+	    id: req.params.id
 	  }
 	}).then(function(dbTask) {
 	  res.json(dbTask);
@@ -36,17 +36,17 @@ module.exports = function(app) {
 	  req.body,
 	  {
 	  	where : {
-	      item: req.body.item
+	      id: req.body.id
 	  	}
 	}).then(function(dbTask) {
 	  res.json(dbTask);
 	});
   });
 
-  app.delete('api/tasks/:item', function(req, res) {
+  app.delete('api/tasks/:id', function(req, res) {
     db.Task.destroy({
   	  where: {
-  	    item: req.params.item
+  	    id: req.params.id
   	  }
     }).then(function(dbTask) {
   	  res.json(dbTask);
