@@ -17,14 +17,27 @@ module.exports = function(app) {
 	});
   });
 
-  app.update('/api/tasks/:item', function(req, res) {
-	var taskItem = req.params.item;
+  // Put route for changing a task's completed status
+  app.put('/api/tasks/:item', function(req, res) {
 	db.Task.update({
 	  completed: true
 	}, { 
 	  where : {
-	    item: taskItem
+	    item: req.params.item
 	  }
+	}).then(function(dbTask) {
+	  res.json(dbTask);
+	});
+  });
+
+  // Put route for editing a task
+  app.put('/api/tasks', function(req, res) {
+	db.Task.update(
+	  req.body,
+	  {
+	  	where : {
+	      item: req.body.item
+	  	}
 	}).then(function(dbTask) {
 	  res.json(dbTask);
 	});
