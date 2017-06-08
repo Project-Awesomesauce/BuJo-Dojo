@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha",
     "start": "node server.js"
   },
   "repository": {
@@ -22,11 +22,14 @@
   "homepage": "https://github.com/mdeggers84/BuJo-Dojo#readme",
   "dependencies": {
     "body-parser": "^1.17.2",
+    "chai": "^4.0.2",
     "express": "^4.15.3",
     "express-handlebars": "^3.0.0",
     "method-override": "^2.3.9",
+    "mocha": "^3.4.2",
     "moment": "^2.18.1",
     "mysql": "^2.13.0",
+    "nightmare": "^2.10.0",
     "sequelize": "^3.30.4"
   }
 }
