@@ -19,7 +19,7 @@ module.exports = function(app) {
 
   app.update('/api/tasks/:item', function(req, res) {
 	var taskItem = req.params.item;
-	app.update({
+	db.Task.update({
 	  completed: true
 	}, { 
 	  where : {
