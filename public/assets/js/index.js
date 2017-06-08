@@ -1,7 +1,4 @@
 $(document).ready(function () {
-  function getTasks() {
-    $.get('/');
-  }
   function addItem(event) {
     event.preventDefault();
 

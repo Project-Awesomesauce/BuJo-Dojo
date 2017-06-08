@@ -10,4 +10,17 @@ module.exports = function (app) {
       res.render('index', hbsObject);
     });
   });
+  app.get('/edit/:id', function (req, res) {
+    db.Task.findOne({
+      where: {
+        id: req.params.id
+      }
+    }).then(function (dbTask) {
+      var hbsObject = {
+        tasks: dbTask
+      };
+      console.log(hbsObject);
+      res.render('edit', hbsObject);
+    });
+  });
 };
