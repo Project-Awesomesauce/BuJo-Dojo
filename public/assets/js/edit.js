@@ -3,7 +3,9 @@ $(document).ready(function () {
     event.preventDefault();
     var data = {
       id: $(this).data('id'),
-      item: $(this).prev().val().trim()
+      item: $(this).prev().prev().val()
+        .trim(),
+      completed: $(this).prev().val()
     };
     $.ajax({
       method: 'PUT',

@@ -11,6 +11,15 @@
       <ul>
         <li>
           <input type="text" value="{{tasks.item}}" id="item-text" name="item">
+          <select name="completed">
+            {{#if tasks.completed}}
+            <option value="true" selected="selected">Completed</option>
+            <option value="false">Not Completed</option>
+            {{else}}
+            <option value="true">Completed</option>
+            <option value="false" selected="selected">Not Completed</option>
+            {{/if}}
+          </select>
           <button data-id="{{tasks.id}}" class="update-item" type="submit">Update</button>
         </li>
       </ul>

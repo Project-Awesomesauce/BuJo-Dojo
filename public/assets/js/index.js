@@ -25,6 +25,12 @@ $(document).ready(function () {
     });
   }
 
+  function editItem(event) {
+    event.preventDefault();
+    document.location = '/edit/' + $(this).data('id');
+  }
+
   $(document).on('click', '#add-item', addItem);
   $(document).on('click', '.destroy-item', destroyItem);
+  $(document).on('click', '.edit-item', editItem);
 });

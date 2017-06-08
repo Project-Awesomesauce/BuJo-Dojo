@@ -19,6 +19,7 @@
         {{#each tasks}}
         <li class="{{completed}}">{{item}}
           <button data-id="{{id}}" class="destroy-item" type="submit">X</button>
+          <button data-id="{{id}}" class="edit-item" type="submit">Edit</button>
         </li>
         {{/each}}
       </ul>
