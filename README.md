@@ -30,6 +30,6 @@ Anyone who wants to keep better track of their day to day (and who wants to be h
 
 
 ## Contributors
-[Michael Eggers](https://github.com/mdeggers84 "GitHub - Michael") :smiley_cat:
-[Katie Geckle](https://github.com/katiearina "GitHub - Katie") :tulip:
-[Patrick Preziotti](https://github.com/ppreziotti "GitHub - Patrick") :balloon:
++ [Michael Eggers](https://github.com/mdeggers84 "GitHub - Michael") :smiley_cat:
++ [Katie Geckle](https://github.com/katiearina "GitHub - Katie") :tulip:
++ [Patrick Preziotti](https://github.com/ppreziotti "GitHub - Patrick") :balloon:
