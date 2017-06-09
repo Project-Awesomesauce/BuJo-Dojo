@@ -1,0 +1,8 @@
+a, a:active, a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: turquoise;
+}
