@@ -6,3 +6,27 @@ a, a:active, a:visited {
 a:hover {
     color: turquoise;
 }
+
+#item-text {
+    min-width: 200px;
+    width: 80%;
+}
+
+#add-item {
+    margin-left: 10px;
+    min-width: 100px;
+    width: 15%;
+    padding: 0px 10px;
+}
+
+.destroy-item {
+    margin-left: 25px;
+    width: 30px;
+    padding: 0px 10px;
+}
+
+.edit-item {
+    margin-left: 5px;
+    width: 50px;
+    padding: 0px 10px;
+}
