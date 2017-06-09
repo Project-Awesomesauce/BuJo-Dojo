@@ -1,5 +1,6 @@
 var Nightmare = require('nightmare');
 var should = require('chai').should();
+var $ = require('jquery');
 
 describe('BuJo Dojo', function () {
   this.timeout(15000);
@@ -27,7 +28,8 @@ describe('BuJo Dojo', function () {
         .click('[id=add-item')
         .wait('#item-list')
         .evaluate(function () {
-          return document.querySelectorAll('#item-list .list-item')[0].innerText;
+          // return document.querySelectorAll('#item-list .list-item')[0].innerText;
+          return $('.list-item')[0].innerText;
         })
         .then(function (result) {
           result.should.equal('Test Nightmare');
@@ -35,5 +37,4 @@ describe('BuJo Dojo', function () {
         });
     });
   });
-})
-;
+});
