@@ -9,6 +9,12 @@
   <div class="row">
     <div class="twelve columns">
       <form>
+        <select name="category" class="dropdown-text">
+          <option value="task" selected="selected">Task</option>
+          <option value="event">Event</option>
+          <option value="note">Note</option>
+          <option value="research">Research</option>
+        </select>
         <input type="text" id="item-text" name="item">
         <button id="add-item" type="submit">Add Task</button>
       </form>
@@ -20,7 +26,8 @@
       <ul>
         {{#each tasks}}
           {{#unless this.completed}}
-            <li><span class="list-item">{{item}}</span>
+            <li>
+              <span class="list-item">{{item}}</span>
               <button data-id="{{id}}" class="destroy-item" type="submit">X</button>
               <button data-id="{{id}}" class="edit-item" type="submit">Edit</button>
             </li>
