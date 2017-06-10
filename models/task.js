@@ -8,6 +8,11 @@ module.exports = function(sequelize, DataTypes) {
                 notEmpty: true
             }
         },
+        category: {
+            type: DataTypes.STRING,
+            notNull: true,
+            defaultValue: "task"
+        },
         completed: {
             type: DataTypes.BOOLEAN,
             notNull: true,
