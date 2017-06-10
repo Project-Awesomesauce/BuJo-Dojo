@@ -46,3 +46,7 @@ a:hover {
     font-family: Raleway, HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 11px;
 }
+
+.completed-item {
+    opacity: 0.5;
+}
