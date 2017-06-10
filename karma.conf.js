@@ -18,7 +18,9 @@ module.exports = function(config) {
     files: [
       'node_modules/jquery/dist/jquery.min.js',
       'source/*.js',
-      'test/*.js'
+      'test/*.js',
+      'routes/*.js',
+      'public/assets/js/*.js'
     ],
 
 
@@ -30,8 +32,8 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-      'test/*.js': ['browserify'],
-      'source/*.js': ['browserify'],
+      'test/*.js': ['browserify', 'jquery'],
+      'source/*.js': ['browserify', 'jquery']
     },
 
 
