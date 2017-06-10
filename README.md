@@ -28,6 +28,36 @@ Anyone who wants to keep better track of their day to day (and who wants to be h
 #### Future Log View (Stretch Goal)
 ![Future Log View](https://user-images.githubusercontent.com/22947371/26908407-73f3b82e-4bc8-11e7-91e0-2b16931067db.png "BuJo - Future Log View")
 
+## Requirements
+~~+ Must use a Node and Express Web Server~~
+
+~~+ Must be backed by a MySQL Database with a Sequelize ORM~~
+
+~~+ Must have both GET and POST routes for retrieving and adding new data~~
+
++ Must incorporate Basic SEO Strategies 
+
+~~+ Must incorporate Basic Testing Framework~~
+
+~~+ Must be deployed using Heroku (with Data)~~
+
+~~+ Must utilize at least one new library, package, or technology that we haven’t discussed~~
+
+~~+ Must have a polished frontend / UI~~
+
+~~+ Must have folder structure that meets MVC Paradigm~~
+
+~~+ Must meet good quality coding standards (indentation, scoping, naming)~~
+
+### Nice to Haves
+
+~~+ Utilize Handlebars for Server-Side Templating~~
+
++ Incorporate Authentication (JSON Web Tokens, Sessions, Etc.)
+
++ Use an existing public dataset to power the database
+
++ Create a migration strategy for sharing data across teammembers.
 
 ## Contributors
 + [Michael Eggers](https://github.com/mdeggers84 "GitHub - Michael") :smiley_cat:
