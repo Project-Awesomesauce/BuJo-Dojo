@@ -12,6 +12,11 @@ a:hover {
     width: 80%;
 }
 
+#edit-text {
+    min-width: 200px;
+    width: 80%;
+}
+
 #add-item {
     margin-left: 10px;
     min-width: 100px;
@@ -29,4 +34,15 @@ a:hover {
     margin-left: 5px;
     width: 50px;
     padding: 0px 10px;
+}
+
+.update-item {
+    margin-left: 5px;
+    width: 90px;
+    padding: 0px 10px;
+}
+
+.dropdown-text {
+    font-family: Raleway, HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 11px;
 }

@@ -1,17 +1,17 @@
 <div class="container">
   <div class="row">
-    <div class="one-half column" style="margin-top: 25%">
+    <div class="twelve columns" style="margin-top: 25%">
       <a href="/"><h4>BuJo Dojo</h4></a>
       <p>This app is going to be awesome, I promise...</p>
     </div>
   </div>
   {{!--task view--}}
   <div class="row">
-    <div class="one-half column">
+    <div class="twelve columns">
       <ul>
         <li>
-          <input type="text" value="{{tasks.item}}" id="item-text" name="item">
-          <select name="completed">
+          <input type="text" value="{{tasks.item}}" id="edit-text" name="item">
+          <select name="completed" class="dropdown-text">
             {{#if tasks.completed}}
             <option value="true" selected="selected">Completed</option>
             <option value="false">Not Completed</option>
