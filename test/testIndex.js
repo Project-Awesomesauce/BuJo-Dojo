@@ -1,7 +1,7 @@
 var Nightmare = require('nightmare');
 var should = require('chai').should();
 
-describe('BuJo Dojo', function () {
+describe('BuJo Dojo Forms', function () {
   this.timeout(15000);
 
   var url = 'http://localhost:8080';
