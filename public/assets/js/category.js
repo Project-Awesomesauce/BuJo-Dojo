@@ -16,7 +16,7 @@ function assignCategory(category, complete) {
 	case "event" | "true":
 	  return "circle-crossed";
 	  break;
-	case ("note" | "true"):
+	case "note" | "true":
 	  return "dash-crossed";
 	  break;
   }
