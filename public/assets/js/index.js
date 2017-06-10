@@ -30,6 +30,19 @@ $(document).ready(function () {
     document.location = '/edit/' + $(this).data('id');
   }
 
+  function selectIcon() {
+    var category;
+    var complete;
+    var icon;
+    $('li').each(function () {
+      category = $(this).next().data('category');
+      complete = $(this).next().data('completed');
+      icon = assignCategory(category, complete);
+      $(this).next().next().addClass(icon);
+    });
+  }
+
+  selectIcon();
   $(document).on('click', '#add-item', addItem);
   $(document).on('click', '.destroy-item', destroyItem);
   $(document).on('click', '.edit-item', editItem);
