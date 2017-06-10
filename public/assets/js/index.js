@@ -37,8 +37,9 @@ $(document).ready(function () {
     $('li').each(function () {
       category = $(this).next().data('category');
       complete = $(this).next().data('completed');
-      icon = assignCategory(category, complete);
-      $(this).next().next().addClass(icon);
+      icon = assignCategory('task', true);
+      console.log(icon);
+      $(this).next().html(icon);
     });
   }
 
