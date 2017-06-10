@@ -35,8 +35,6 @@ Anyone who wants to keep better track of their day to day (and who wants to be h
 
 + ~~Must have both GET and POST routes for retrieving and adding new data~~
 
-+ Must incorporate Basic SEO Strategies 
-
 + ~~Must incorporate Basic Testing Framework~~
 
 + ~~Must be deployed using Heroku (with Data)~~
@@ -58,6 +56,8 @@ Anyone who wants to keep better track of their day to day (and who wants to be h
 + Use an existing public dataset to power the database
 
 + Create a migration strategy for sharing data across teammembers.
+
++ Must incorporate Basic SEO Strategies 
 
 ## Contributors
 + [Michael Eggers](https://github.com/mdeggers84 "GitHub - Michael") :smiley_cat:
