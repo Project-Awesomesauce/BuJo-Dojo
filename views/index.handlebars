@@ -20,7 +20,7 @@
       <ul>
         {{#each tasks}}
           {{#unless this.completed}}
-            <li><span class="{{completed}} list-item">{{item}}</span>
+            <li><span class="list-item">{{item}}</span>
               <button data-id="{{id}}" class="destroy-item" type="submit">X</button>
               <button data-id="{{id}}" class="edit-item" type="submit">Edit</button>
             </li>
@@ -30,7 +30,10 @@
       <ul>
         {{#each tasks}}
           {{#if this.completed}}
-            <li><span class="completed-item">{{item}}</span></li>
+            <li>
+              <span class="completed-item">{{item}}</span>              
+              <button data-id="{{id}}" class="edit-item" type="submit">Edit</button>
+            </li>
           {{/if}}
         {{/each}}
       <div id="test"></div>
