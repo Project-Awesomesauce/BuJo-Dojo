@@ -24,31 +24,34 @@ a:hover {
     color: turquoise;
 }
 
-#item-text {
-    min-width: 200px;
-    width: 80%;
+.dropdown-text {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
-#edit-text {
+#edit-text, #item-text {
     min-width: 200px;
-    width: 80%;
+    width: 70%;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 #add-item {
-    margin-left: 10px;
-    min-width: 100px;
-    width: 15%;
+    width: 90px;
     padding: 0px 10px;
 }
 
 .destroy-item {
-    margin-left: 25px;
+    margin-left: 5px;
     width: 30px;
     padding: 0px 10px;
 }
 
 .edit-item {
-    margin-left: 5px;
+    margin-left: 25px;
     width: 50px;
     padding: 0px 10px;
 }
@@ -59,12 +62,16 @@ a:hover {
     padding: 0px 10px;
 }
 
-.dropdown-text {
-    font-size: 11px;
-}
-
 .completed-item {
     opacity: 0.5;
+}
+
+ul {
+    margin-bottom: 0px !important;
+}
+
+li {
+    margin-bottom: .5em !important;
 }
 
 button:hover, .button-primary:hover {
