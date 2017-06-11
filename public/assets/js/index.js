@@ -3,14 +3,20 @@ $(document).ready(function () {
     event.preventDefault();
 
     var itemInput = $('#item-text').val().trim();
+    var categoryInput = document.getElementById('category-select').value;
 
     if (!itemInput) {
       return;
     }
 
-    $.post('/api/tasks', { item: itemInput }).then(function () {
+    $.post('/api/tasks', { 
+      item: itemInput,
+      category: categoryInput
+    }).then(function () {
       location.reload();
     });
+
+    console.log("category input: " + categoryInput);
   }
 
   function destroyItem(event) {
