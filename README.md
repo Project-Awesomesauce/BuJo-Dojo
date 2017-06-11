@@ -17,7 +17,7 @@ Anyone who wants to keep better track of their day to day (and who wants to be h
 + Allow user to set item due date
 + Weekly/Monthly views
 + User Login
-+ GitHub-style Markdown
++ Allow styling of items with GitHub-style markdown
 
 ### Original Mockups
 
@@ -63,9 +63,9 @@ Anyone who wants to keep better track of their day to day (and who wants to be h
 
 ## New Technologies Used
 
-+ [Skeleton](http://www.getskeleton.com "Skeleton") -- CSS Framework
++ [Skeleton](http://www.getskeleton.com "Skeleton") - CSS Framework
 
-+ [Formspree.io](https://formspree.io/ "Formspree.io") -- Functional HTML Forms (used for Contact form)
++ [Formspree.io](https://formspree.io/ "Formspree.io") - Functional HTML Forms (used for Contact form)
 
 ## Contributors
 + [Michael Eggers](https://github.com/mdeggers84 "GitHub - Michael") :smiley_cat:
