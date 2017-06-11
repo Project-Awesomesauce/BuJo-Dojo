@@ -10,6 +10,7 @@ module.exports = function (app) {
       res.render('index', hbsObject);
     });
   });
+
   app.get('/edit/:id', function (req, res) {
     db.Task.findOne({
       where: {
@@ -23,4 +24,13 @@ module.exports = function (app) {
       res.render('edit', hbsObject);
     });
   });
+  
+  app.get('/contact', function (req, res) {
+    res.render('contact');
+  });
+
+  app.get('/thanks', function (req, res) {
+    res.render('thanks');
+  });
+
 };
