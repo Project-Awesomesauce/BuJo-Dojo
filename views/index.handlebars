@@ -1,6 +1,6 @@
 <div class="container" id="wrap">
   <div class="row">
-    <div class="twelve columns quarterTopMargin">
+    <div class="twelve columns" style="margin-top: 25%">
       <a href="/"><h4>BuJo Dojo</h4></a>
       <p>This app is going to be awesome, I promise...</p>
     </div>
@@ -25,27 +25,18 @@
   {{!--task view--}}
   <div class="row">
     <div id="item-list" class="twelve columns">
-      <table class="u-full-width">
-        <thead>
-          <tr>
-            <th>1</th>
-            <th>2</th>
-            <th>3</th>
-          </tr>
-        </thead>
-        <tbody>
-      {{!--<ul class="fa-ul">--}}
+      <ul class="fa-ul">
         {{#each tasks}}
           {{#unless this.completed}}
-            <tr>
-              <td class="{{this.category}}" id="item-{{this.id}}"><span data-category="{{category}}" data-completed="{{completed}}"><i class="fa fa-bath" aria-hidden="true"></i></span></td>
-              <td><span class="list-item">{{item}}</span></td>
-              <td><button data-id="{{id}}" class="destroy-item" type="submit">X</button>
-              <button data-id="{{id}}" class="edit-item" type="submit">Edit</button></td>
-            </tr>
+            <li>
+              <span data-category="{{category}}" data-completed="{{completed}}"></span>
+              <span class="list-item">{{item}}</span>
+              <button data-id="{{id}}" class="destroy-item" type="submit">X</button>
+              <button data-id="{{id}}" class="edit-item" type="submit">Edit</button>
+            </li>
           {{/unless}}
         {{/each}}
-      
+      </ul>
       <ul class="fa-ul">
         {{#each tasks}}
           {{#if this.completed}}
@@ -56,10 +47,9 @@
           {{/if}}
         {{/each}}
       </ul>
-
-      {{!-- Leave me in here, please --}}
+      
+      {{!-- Leave me in here, please --}}      
       <div id="test"></div>
-      </table>
     </div>
   </div>
 </div>
