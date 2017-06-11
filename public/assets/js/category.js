@@ -1,23 +1,22 @@
 function assignCategory(category, complete) {
   switch(category | complete) {
   	case "task" | false:
-  	  // Will eventually change the return values to actual font-awesome icon names
-  	  return "bullet"; 
+  	  return "fa-square-o"; 
   	  break;
     case "event" | false:
-      return "circle";
+      return "fa-circle-o";
       break;
 	case "note" | false:
-	  return "dash";
+	  return "fa-star-o";
 	  break;
 	case "task" | true:
-	  return "bullet-crossed";
+	  return "fa-check-square";
 	  break;
 	case "event" | true:
-	  return "circle-crossed";
+	  return "fa-check-circle";
 	  break;
 	case "note" | true:
-	  return "dash-crossed";
+	  return "fa-star";
 	  break;
   }
 }

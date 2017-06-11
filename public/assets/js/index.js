@@ -35,11 +35,16 @@ $(document).ready(function () {
     var complete;
     var icon;
     $('li').each(function () {
-      category = $(this).next().data('category');
-      complete = $(this).next().data('completed');
-      icon = assignCategory('task', true);
+      category = $(this).data('category');  
+      complete = $(this).data('completed');
+      icon = assignCategory('task', false); // will change parameters to 'category' and 'completed'
+      console.log($(this).data);
+      console.log(category); // currently logs undefined
+      console.log(complete); // currently logs undefined
       console.log(icon);
-      $(this).next().html(icon);
+      var iconListItem = $('<i>').addClass("fa-li fa");
+      iconListItem.addClass(icon);
+      $(this).append(iconListItem);
     });
   }
 

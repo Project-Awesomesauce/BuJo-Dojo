@@ -23,7 +23,7 @@
   {{!--task view--}}
   <div class="row">
     <div id="item-list" class="twelve columns">
-      <ul>
+      <ul class="fa-ul">
         {{#each tasks}}
           {{#unless this.completed}}
             <li>
@@ -35,7 +35,7 @@
           {{/unless}}
         {{/each}}
       </ul>
-      <ul>
+      <ul class="fa-ul">
         {{#each tasks}}
           {{#if this.completed}}
             <li>
