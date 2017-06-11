@@ -42,24 +42,31 @@ a:hover {
 #add-item {
     width: 90px;
     padding: 0px 10px;
+    position: relative;
+    top: 0px;
+    height: 38px;
+    border: 1px solid #D1D1D1;
 }
 
 .destroy-item {
     margin-left: 5px;
     width: 30px;
     padding: 0px 10px;
+    border: 1px solid #D1D1D1;
 }
 
 .edit-item {
     margin-left: 25px;
     width: 50px;
     padding: 0px 10px;
+    border: 1px solid #D1D1D1;
 }
 
 .update-item {
     margin-left: 5px;
     width: 90px;
     padding: 0px 10px;
+    border: 1px solid #D1D1D1;
 }
 
 .completed-item {
@@ -83,7 +90,7 @@ button:hover, .button-primary:hover {
 button, .button-primary {
     background-color: white !important;
     color: black !important;
-    border-color: black !important;
+    border-color: black;
 }
 
 /* Sticky footer positioning and to get rid of weird L-R scroll bar */
@@ -124,5 +131,11 @@ html, body {
 }
 
 #new-item {
-    padding-top: 0px;
+    padding-top: 0px !important;
+}
+
+#category-select {
+    margin-top: 0px !important;
+    position: relative;
+    top: -1px;
 }
