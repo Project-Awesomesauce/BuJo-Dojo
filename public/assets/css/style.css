@@ -1,3 +1,11 @@
+body {
+    font-family: Raleway, HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.quarterTopMargin {
+    margin-top: 25%;
+}
+
 a, a:active, a:visited {
     text-decoration: none;
     color: black;
@@ -43,12 +51,23 @@ a:hover {
 }
 
 .dropdown-text {
-    font-family: Raleway, HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 11px;
 }
 
 .completed-item {
     opacity: 0.5;
+}
+
+#contact-submit:hover {
+    background-color: turquoise;
+    border-color: turquoise;
+    color: white;
+}
+
+#contact-submit {
+    background-color: white;
+    color: black;
+    border-color: black;
 }
 
 /* Sticky footer positioning and to get rid of weird L-R scroll bar */

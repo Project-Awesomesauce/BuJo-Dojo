@@ -1,18 +1,28 @@
 <div class="container" id="wrap">
 
-<form method="POST" action="http://formspree.io/katiearina@gmail.com">
   <div class="row">
-    <div class="twelve columns">
-        <input type="hidden" name="_subject" value="New submission re: BuJo Dojo!">
-        <input type="hidden" name="_cc" value="mdeggers84@gmail.com,patpreziotti@gmail.com">
-        <input type="hidden" name="_next" value="/thanks">
-      <label for="exampleEmailInput">Your email</label>
-      <input class="u-full-width" type="email" name="email" placeholder="Your email">
+    <div class="twelve columns quarterTopMargin">
+      <a href="/"><h4>BuJo Dojo</h4></a>
     </div>
   </div>
-  <label for="exampleMessage">Message</label>
-  <textarea class="u-full-width" name="message" placeholder="Tell us something nice!"></textarea>
-  <input class="button-primary" type="submit" value="Send!">
-</form>
+
+    <div class="row">
+        <div class="twelve columns">
+            <form method="POST" action="http://formspree.io/katiearina@gmail.com" id="contact-us">
+            <div class="row">
+                <div class="twelve columns">
+                    <input type="hidden" name="_subject" value="New submission re: BuJo Dojo!">
+                    <input type="hidden" name="_cc" value="mdeggers84@gmail.com,patpreziotti@gmail.com">
+                    <input type="hidden" name="_next" value="/thanks">
+                <label for="exampleEmailInput">Your email</label>
+                <input class="u-full-width" type="email" name="email" placeholder="Your email">
+                </div>
+            </div>
+            <label for="exampleMessage">Message</label>
+            <textarea class="u-full-width" name="message" placeholder="Tell us something nice!"></textarea>
+            <input class="button-primary" type="submit" value="Send!" id="contact-submit">
+            </form>
+        </div>
+    </div>
 
 </div>
