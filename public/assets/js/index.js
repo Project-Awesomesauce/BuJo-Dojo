@@ -15,8 +15,6 @@ $(document).ready(function () {
     }).then(function () {
       location.reload();
     });
-
-    console.log("category input: " + categoryInput);
   }
 
   function destroyItem(event) {
@@ -38,16 +36,12 @@ $(document).ready(function () {
 
   function selectIcon() {
     var category;
-    var complete;
+    var completed;
     var icon;
     $('li').each(function () {
-      category = $(this).data('category');  
-      complete = $(this).data('completed');
-      icon = assignCategory('task', false); // will change parameters to 'category' and 'completed'
-      console.log($(this).data);
-      console.log(category); // currently logs undefined
-      console.log(complete); // currently logs undefined
-      console.log(icon);
+      category = $(this).attr('data-category');  
+      completed = $(this).attr('data-completed');
+      icon = assignCategory(category, JSON.parse(completed));
       var iconListItem = $('<i>').addClass("fa-li fa");
       iconListItem.addClass(icon);
       $(this).append(iconListItem);

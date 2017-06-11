@@ -26,8 +26,7 @@
       <ul class="fa-ul">
         {{#each tasks}}
           {{#unless this.completed}}
-            <li>
-              <span data-category="{{category}}" data-completed="{{completed}}"></span>
+            <li data-category="{{category}}" data-completed="{{completed}}">
               <span class="list-item">{{item}}</span>
               <button data-id="{{id}}" class="destroy-item" type="submit">X</button>
               <button data-id="{{id}}" class="edit-item" type="submit">Edit</button>
@@ -38,7 +37,7 @@
       <ul class="fa-ul">
         {{#each tasks}}
           {{#if this.completed}}
-            <li>
+            <li data-category="{{category}}" data-completed="{{completed}}">
               <span class="completed-item">{{item}}</span>              
               <button data-id="{{id}}" class="edit-item" type="submit">Edit</button>
             </li>
