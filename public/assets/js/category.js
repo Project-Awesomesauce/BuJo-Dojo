@@ -1,22 +1,26 @@
-function assignCategory(category, complete) {
-  switch(category | complete) {
-  	case "task" | false:
-  	  return "fa-square-o"; 
-  	  break;
-    case "event" | false:
-      return "fa-circle-o";
-      break;
-	case "note" | false:
-	  return "fa-star-o";
-	  break;
-	case "task" | true:
-	  return "fa-check-square";
-	  break;
-	case "event" | true:
-	  return "fa-check-circle";
-	  break;
-	case "note" | true:
-	  return "fa-star";
-	  break;
+function assignCategory(category, completed) {
+  if (category === "task" && completed === false) {
+  	return "fa-square-o"
+  }
+  else if (category === "event" && completed === false) {
+  	return "fa-circle-o"
+  }
+  else if (category === "note" && completed === false) {
+  	return "fa-star-o"
+  }
+  else if (category === "research" && completed === false) {
+  	return "fa-eye"
+  }
+  else if (category === "task" && completed === true) {
+  	return "fa-check-square"
+  }
+  else if (category === "event" && completed === true) {
+  	return "fa-check-circle"
+  }
+  else if (category === "note" && completed === true) {
+  	return "fa-star"
+  }
+  else if (category === "research" && completed === true) {
+  	return "fa-eye-slash"
   }
 }
