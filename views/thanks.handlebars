@@ -1,14 +1,19 @@
 <div class="container" id="wrap">
   <div class="row">
     <div class="twelve columns quarterTopMargin">
-      <a href="/"><h4>BuJo Dojo</h4></a>
-      <h5>Your comments have been sent. Thank you!</h5>
-      <p>(You will be redirected to your day view in a few seconds)</p>
+      {{!--<a href="/"><h4>BuJo Dojo</h4></a>--}}
+
+        <div id="redirect-message">
+          <h5>Your comments have been sent. Thank you!</h5>
+          <p>(You will be redirected to your day view in a few seconds)</p>
+        </div>
+
     </div>
   </div>
 
 </div>
 
+{{!-- Reload home page after 3 seconds --}}
 <script type="text/javascript">
   setTimeout("window.location='/'", 3000);
 </script>

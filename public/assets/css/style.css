@@ -10,6 +10,11 @@ body {
     top: .7em !important;
 }
 
+#redirect-message {
+    text-align: center;
+    /*color: turquoise;*/
+}
+
 a, a:active, a:visited {
     text-decoration: none;
     color: black;
@@ -62,16 +67,16 @@ a:hover {
     opacity: 0.5;
 }
 
-button:hover {
-    background-color: turquoise;
-    border-color: turquoise;
-    color: white;
+button:hover, .button-primary:hover {
+    background-color: turquoise !important;
+    border-color: mediumturquoise !important;
+    color: white !important;
 }
 
-button {
-    background-color: white;
-    color: black;
-    border-color: black;
+button, .button-primary {
+    background-color: white !important;
+    color: black !important;
+    border-color: black !important;
 }
 
 /* Sticky footer positioning and to get rid of weird L-R scroll bar */
@@ -109,4 +114,8 @@ html, body {
 
 #footer p {
     margin-bottom: 0;
+}
+
+#new-item {
+    padding-top: 0px;
 }

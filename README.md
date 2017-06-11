@@ -10,12 +10,14 @@ A web app version of the popular minimalist bullet journal for tracking to do li
 Anyone who wants to keep better track of their day to day (and who wants to be hip and cool).
 
 ### MVP
-+ To do list / current daily view with ability to create, update, and delete tasks, edited with GitHub-style markdown.
++ To do list / current daily view with ability to create, update, and delete tasks.
 
 ### Stretch Goals
 + Allow user to select date to view/edit
-+ Weekly/Monthly views.
++ Allow user to set item due date
++ Weekly/Monthly views
 + User Login
++ GitHub-style Markdown
 
 ### Original Mockups
 
@@ -58,6 +60,12 @@ Anyone who wants to keep better track of their day to day (and who wants to be h
 + Create a migration strategy for sharing data across teammembers.
 
 + Must incorporate Basic SEO Strategies 
+
+## New Technologies Used
+
++ [Skeleton](http://www.getskeleton.com "Skeleton") -- CSS Framework
+
++ [Formspree.io](https://formspree.io/ "Formspree.io") -- Functional HTML Forms (used for Contact form)
 
 ## Contributors
 + [Michael Eggers](https://github.com/mdeggers84 "GitHub - Michael") :smiley_cat:
