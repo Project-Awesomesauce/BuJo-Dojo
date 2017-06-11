@@ -3,7 +3,16 @@ body {
 }
 
 .quarterTopMargin {
-    margin-top: 25%;
+    margin-top: 15%;
+}
+
+.fa-li {
+    top: .7em !important;
+}
+
+#redirect-message {
+    text-align: center;
+    /*color: turquoise;*/
 }
 
 a, a:active, a:visited {
@@ -15,58 +24,72 @@ a:hover {
     color: turquoise;
 }
 
-#item-text {
-    min-width: 200px;
-    width: 80%;
+.dropdown-text {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
-#edit-text {
+#edit-text, #item-text {
     min-width: 200px;
-    width: 80%;
+    width: 70%;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 #add-item {
-    margin-left: 10px;
-    min-width: 100px;
-    width: 15%;
+    width: 90px;
     padding: 0px 10px;
+    position: relative;
+    top: 0px;
+    height: 38px;
+    border: 1px solid #D1D1D1;
 }
 
 .destroy-item {
-    margin-left: 25px;
+    margin-left: 5px;
     width: 30px;
     padding: 0px 10px;
+    border: 1px solid #D1D1D1;
 }
 
 .edit-item {
-    margin-left: 5px;
+    margin-left: 25px;
     width: 50px;
     padding: 0px 10px;
+    border: 1px solid #D1D1D1;
 }
 
 .update-item {
     margin-left: 5px;
     width: 90px;
     padding: 0px 10px;
-}
-
-.dropdown-text {
-    font-size: 11px;
+    border: 1px solid #D1D1D1;
 }
 
 .completed-item {
     opacity: 0.5;
 }
 
-#contact-submit:hover {
-    background-color: turquoise;
-    border-color: turquoise;
-    color: white;
+ul {
+    margin-bottom: 0px !important;
 }
 
-#contact-submit {
-    background-color: white;
-    color: black;
+li {
+    margin-bottom: .5em !important;
+}
+
+button:hover, .button-primary:hover {
+    background-color: turquoise !important;
+    border-color: mediumturquoise !important;
+    color: white !important;
+}
+
+button, .button-primary {
+    background-color: white !important;
+    color: black !important;
     border-color: black;
 }
 
@@ -90,7 +113,7 @@ html, body {
 #footer {
 	/* Must match margin-bottom in .wrapper CSS */
 	/* Set the fixed height of the footer here */
-	height: 30px;
+	height: 40px;
 	overflow: auto;
 	overflow-y: hidden;
 	margin-top: 50px;
@@ -98,8 +121,21 @@ html, body {
     text-align: center;
     font-size: 11px;
     font-weight: 600;
-    line-height: 38px;
     letter-spacing: .1rem;
     text-transform: uppercase;
     text-decoration: none;
+}
+
+#footer p {
+    margin-bottom: 0;
+}
+
+#new-item {
+    padding-top: 0px !important;
+}
+
+#category-select {
+    margin-top: 0px !important;
+    position: relative;
+    top: -1px;
 }
