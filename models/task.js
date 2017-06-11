@@ -10,8 +10,8 @@ module.exports = function(sequelize, DataTypes) {
         },
         category: {
             type: DataTypes.STRING,
-            notNull: true,
-            defaultValue: "task"
+            notNull: true
+            //defaultValue: "task"
         },
         completed: {
             type: DataTypes.BOOLEAN,
