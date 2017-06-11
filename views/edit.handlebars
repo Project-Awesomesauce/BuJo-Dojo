@@ -1,28 +1,28 @@
 <div class="container" id="wrap">
   <div class="row">
-    <div class="twelve columns quarterTopMargin">
+    <div class="twelve columns top-page-margin">
       <a href="/"><h4>BuJo Dojo</h4></a>
-      <p>This app is going to be awesome, I promise...</p>
     </div>
   </div>
   {{!--task view--}}
   <div class="row">
     <div class="twelve columns">
-      <ul>
-        <li>
-          <input type="text" value="{{tasks.item}}" id="edit-text" name="item">
-          <select name="completed" class="dropdown-text">
-            {{#if tasks.completed}}
-            <option value="true" selected="selected">Completed</option>
-            <option value="false">Not Completed</option>
-            {{else}}
-            <option value="true">Completed</option>
-            <option value="false" selected="selected">Not Completed</option>
-            {{/if}}
-          </select>
-          <button data-id="{{tasks.id}}" class="update-item" type="submit">Update</button>
-        </li>
-      </ul>
+
+      <input type="text" value="{{tasks.item}}" id="edit-text" name="item">
+      
+      <select name="completed" class="dropdown-text">        
+        {{#if tasks.completed}}
+          <option value="true" selected="selected">Completed</option>
+          <option value="false">Not Completed</option>
+          
+        {{else}}
+          <option value="true">Completed</option>
+          <option value="false" selected="selected">Not Completed</option>         
+        {{/if}}
+      </select>
+
+      <button data-id="{{tasks.id}}" class="update-item" type="submit">Update!</button>
+
     </div>
   </div>
 </div>

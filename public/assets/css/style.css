@@ -2,7 +2,7 @@ body {
     font-family: Raleway, HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.quarterTopMargin {
+.top-page-margin {
     margin-top: 15%;
 }
 
@@ -30,9 +30,13 @@ a:hover {
     letter-spacing: .1rem;
     text-transform: uppercase;
     text-decoration: none;
+    margin-top: 0px !important;
+    position: relative;
+    top: -1px;
 }
 
 #edit-text, #item-text {
+    font-size: 12px;
     min-width: 200px;
     width: 70%;
     margin-left: 10px;
@@ -53,6 +57,8 @@ a:hover {
     width: 30px;
     padding: 0px 10px;
     border: 1px solid #D1D1D1;
+    position: relative;
+    top: 0px;
 }
 
 .edit-item {
@@ -60,13 +66,17 @@ a:hover {
     width: 50px;
     padding: 0px 10px;
     border: 1px solid #D1D1D1;
+    position: relative;
+    top: 0px;
 }
 
 .update-item {
-    margin-left: 5px;
+    margin-left: 10px;
     width: 90px;
     padding: 0px 10px;
     border: 1px solid #D1D1D1;
+    position: relative;
+    top: 0px;
 }
 
 .completed-item {
@@ -132,10 +142,4 @@ html, body {
 
 #new-item {
     padding-top: 0px !important;
-}
-
-#category-select {
-    margin-top: 0px !important;
-    position: relative;
-    top: -1px;
 }
