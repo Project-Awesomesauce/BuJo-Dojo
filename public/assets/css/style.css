@@ -2,7 +2,14 @@ body {
     font-family: Raleway, HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.quarterTopMargin {
+h1 {
+    font-family: 'Megrim', cursive;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 82px;
+}
+
+.top-page-margin {
     margin-top: 15%;
 }
 
@@ -12,7 +19,10 @@ body {
 
 #redirect-message {
     text-align: center;
-    /*color: turquoise;*/
+}
+
+.fa-hand-peace-o {
+    color: turquoise;
 }
 
 a, a:active, a:visited {
@@ -24,19 +34,32 @@ a:hover {
     color: turquoise;
 }
 
+#new-item {
+    padding-top: 0px !important;
+}
+
 .dropdown-text {
     font-size: 11px;
     font-weight: 600;
     letter-spacing: .1rem;
     text-transform: uppercase;
     text-decoration: none;
+    margin-top: 0px !important;
+    position: relative;
+    top: -1px;
 }
 
 #edit-text, #item-text {
+    font-size: 12px;
     min-width: 200px;
     width: 70%;
     margin-left: 10px;
     margin-right: 10px;
+}
+
+.u-full-width {
+    font-size: 12px;
+    min-width: 200px;
 }
 
 #add-item {
@@ -53,6 +76,8 @@ a:hover {
     width: 30px;
     padding: 0px 10px;
     border: 1px solid #D1D1D1;
+    position: relative;
+    top: 0px;
 }
 
 .edit-item {
@@ -60,13 +85,17 @@ a:hover {
     width: 50px;
     padding: 0px 10px;
     border: 1px solid #D1D1D1;
+    position: relative;
+    top: 0px;
 }
 
 .update-item {
-    margin-left: 5px;
+    margin-left: 10px;
     width: 90px;
     padding: 0px 10px;
     border: 1px solid #D1D1D1;
+    position: relative;
+    top: 0px;
 }
 
 .completed-item {
@@ -90,7 +119,7 @@ button:hover, .button-primary:hover {
 button, .button-primary {
     background-color: white !important;
     color: black !important;
-    border-color: black;
+    border: 1px solid #D1D1D1 !important;
 }
 
 /* Sticky footer positioning and to get rid of weird L-R scroll bar */
@@ -101,23 +130,22 @@ html, body {
 
 /* Wrapper for page content to push down footer */
 #wrap {
-	min-height: 100%;
+	min-height: 95%;
 	height: auto;
 	/* Negative indent footer by its height */
-	margin: 0px auto -60px;
+	margin: 0px auto -50px;
 	/* Pad bottom by footer height */
-	padding: 0px 0px 60px 0px;
+	padding: 0px 0px 50px 0px;
 }
 
 /* Sticky footer styling! */
 #footer {
 	/* Must match margin-bottom in .wrapper CSS */
 	/* Set the fixed height of the footer here */
-	height: 40px;
+	height: 50px;
 	overflow: auto;
-	overflow-y: hidden;
 	margin-top: 50px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     text-align: center;
     font-size: 11px;
     font-weight: 600;
@@ -128,14 +156,4 @@ html, body {
 
 #footer p {
     margin-bottom: 0;
-}
-
-#new-item {
-    padding-top: 0px !important;
-}
-
-#category-select {
-    margin-top: 0px !important;
-    position: relative;
-    top: -1px;
 }
