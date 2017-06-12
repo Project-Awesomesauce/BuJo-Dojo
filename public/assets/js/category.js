@@ -24,3 +24,5 @@ function assignCategory(category, completed) {
   	return "fa-eye-slash"
   }
 }
+
+module.exports = assignCategory;

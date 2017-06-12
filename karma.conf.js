@@ -1,5 +1,5 @@
 // Karma configuration
-// Generated on Fri Jun 09 2017 17:14:39 GMT-0400 (EDT)
+// Generated on Mon Jun 12 2017 12:55:52 GMT-0400 (EDT)
 
 module.exports = function(config) {
   config.set({
@@ -10,17 +10,14 @@ module.exports = function(config) {
 
     // frameworks to use
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
-    frameworks: ['mocha',
-      'browserify'],
+    frameworks: ['mocha', 'browserify'],
 
 
     // list of files / patterns to load in the browser
     files: [
-      'node_modules/jquery/dist/jquery.min.js',
-      'source/*.js',
+      'public/assets/js/*.js',
       'test/*.js',
-      'routes/*.js',
-      'public/assets/js/*.js'
+      'routes/*.js'
     ],
 
 
@@ -32,16 +29,16 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-      'test/*.js': ['browserify', 'jquery'],
-      'source/*.js': ['browserify', 'jquery']
+      // 'public/assets/js/*.js': ['browserify'],
+      'test/*.js': ['browserify'],
+      'routes/*.js': ['browserify']
     },
 
 
     // test results reporter to use
     // possible values: 'dots', 'progress'
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-    reporters: ['progress',
-      'mocha'],
+    reporters: ['progress', 'mocha'],
 
 
     // web server port
