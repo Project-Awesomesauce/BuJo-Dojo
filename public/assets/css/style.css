@@ -114,20 +114,19 @@ html, body {
 	min-height: 100%;
 	height: auto;
 	/* Negative indent footer by its height */
-	margin: 0px auto -60px;
+	margin: 0px auto -50px;
 	/* Pad bottom by footer height */
-	padding: 0px 0px 60px 0px;
+	padding: 0px 0px 50px 0px;
 }
 
 /* Sticky footer styling! */
 #footer {
 	/* Must match margin-bottom in .wrapper CSS */
 	/* Set the fixed height of the footer here */
-	height: 40px;
+	height: 50px;
 	overflow: auto;
-	overflow-y: hidden;
 	margin-top: 50px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     text-align: center;
     font-size: 11px;
     font-weight: 600;
