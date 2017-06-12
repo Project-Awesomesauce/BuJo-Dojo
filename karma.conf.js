@@ -10,11 +10,12 @@ module.exports = function(config) {
 
     // frameworks to use
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
-    frameworks: ['mocha', 'browserify'],
+    frameworks: ['mocha', 'browserify', 'jquery'],
 
 
     // list of files / patterns to load in the browser
     files: [
+      '/node_modules/jquery/dist/jquery.min.js'
       'public/assets/js/*.js',
       'test/*.js',
       'routes/*.js'
@@ -30,8 +31,8 @@ module.exports = function(config) {
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
       // 'public/assets/js/*.js': ['browserify'],
-      'test/*.js': ['browserify'],
-      'routes/*.js': ['browserify']
+      'test/*.js': ['browserify', 'jquery'],
+      'routes/*.js': ['browserify', 'jquery']
     },
 
 
