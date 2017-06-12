@@ -2,6 +2,13 @@ body {
     font-family: Raleway, HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+h1 {
+    font-family: 'Megrim', cursive;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 82px;
+}
+
 .top-page-margin {
     margin-top: 15%;
 }
@@ -12,7 +19,10 @@ body {
 
 #redirect-message {
     text-align: center;
-    /*color: turquoise;*/
+}
+
+.fa-hand-peace-o {
+    color: turquoise;
 }
 
 a, a:active, a:visited {
@@ -41,6 +51,11 @@ a:hover {
     width: 70%;
     margin-left: 10px;
     margin-right: 10px;
+}
+
+.u-full-width {
+    font-size: 12px;
+    min-width: 200px;
 }
 
 #add-item {
@@ -100,7 +115,7 @@ button:hover, .button-primary:hover {
 button, .button-primary {
     background-color: white !important;
     color: black !important;
-    border-color: black;
+    border: 1px solid #D1D1D1 !important;
 }
 
 /* Sticky footer positioning and to get rid of weird L-R scroll bar */
