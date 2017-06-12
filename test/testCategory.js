@@ -1,30 +1,30 @@
-var expect = require('chai').expect;
+var should = require('chai').should();
 var assignCategory = require('../public/assets/js/category');
 
 describe('BuJo Dojo Functions', function () {
   describe('Assign Category', function () {
     it('should assign bullet when task/complete', function () {
-      expect(assignCategory('task', false).to.equal('bullet'));
+      assignCategory('task', false).should.equal('fa-square-o');
     });
 
     it('should assign blank when event/complete', function () {
-      expect(assignCategory('event', false)).to.equal('circle');
+      assignCategory('event', false).should.equal('fa-circle-o');
     });
 
     it('should assign blank when note/complete', function () {
-      expect(assignCategory('note', false)).to.equal('dash');
+      assignCategory('note', false).should.equal('fa-star-o');
     });
 
     it('should assign bullet when task/not complete', function () {
-      expect(assignCategory('task', true).to.equal('bullet-crossed'));
+      assignCategory('task', true).should.equal('fa-check-square');
     });
 
     it('should assign blank when event/not complete', function () {
-      expect(assignCategory('event', true)).to.equal('circle-crossed');
+      assignCategory('event', true).should.equal('fa-check-circle');
     });
 
     it('should assign blank when note/not complete', function () {
-      expect(assignCategory('note', true)).to.equal('dash-crossed');
+      assignCategory('note', true).should.equal('fa-star');
     });
   });
 });
