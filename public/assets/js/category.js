@@ -1,4 +1,4 @@
-function assignCategory(category, completed) {
+var assignCategory = function (category, completed) {
   if (category === "task" && completed === false) {
   	return "fa-square-o"
   }
@@ -23,4 +23,7 @@ function assignCategory(category, completed) {
   else if (category === "research" && completed === true) {
   	return "fa-eye-slash"
   }
+  return "no match";
 }
+
+module.exports = assignCategory;
