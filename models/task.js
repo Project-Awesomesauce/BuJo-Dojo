@@ -20,7 +20,6 @@ module.exports = function(sequelize, DataTypes) {
             notNull: true,
             defaultValue: false
         },
-        // Updated to allow for date views!!!
         setDate: {
             type: DataTypes.DATE,
             allowNull: false,

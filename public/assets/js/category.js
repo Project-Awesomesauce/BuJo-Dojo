@@ -26,4 +26,4 @@ var assignCategory = function (category, completed) {
   return "no match";
 }
 
-module.exports = assignCategory;
+//module.exports = assignCategory;
