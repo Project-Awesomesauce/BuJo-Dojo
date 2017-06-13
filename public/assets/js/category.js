@@ -19,4 +19,8 @@ var assignCategory = function (category, completed) {
   return 'no match';
 };
 
-module.exports = assignCategory;
+if (typeof module !== 'undefined') {
+  module.exports = assignCategory;
+} else {
+  console.log('winning');
+}
