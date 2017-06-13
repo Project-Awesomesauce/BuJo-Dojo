@@ -1,4 +1,5 @@
 var db = require('../models');
+var moment = require('moment');
 
 module.exports = function (app) {
   app.get('/', function (req, res) {
@@ -33,4 +34,16 @@ module.exports = function (app) {
     res.render('thanks');
   });
 
+  app.get('/date', function(req, res) {
+    db.Task.findAll({
+      where: {
+        setDate: moment().format('YYYY-MM-DD')
+      }
+    }).then(function(dbTask) {
+      var hbsObject = {
+        tasks: dbTask
+      };
+      res.render('date', hbsObject);
+    });
+  });
 };
