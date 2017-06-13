@@ -1,7 +1,7 @@
 // Karma configuration
 // Generated on Mon Jun 12 2017 12:55:52 GMT-0400 (EDT)
 
-module.exports = function(config) {
+module.exports = function (config) {
   config.set({
     // base path that will be used to resolve all patterns (eg. files, exclude)
     basePath: '',
@@ -21,7 +21,7 @@ module.exports = function(config) {
 
     // list of files to exclude
     exclude: [
-      'test/testIndex.js'
+      // 'test/testIndex.js'
     ],
 
 
@@ -67,6 +67,10 @@ module.exports = function(config) {
 
     // Concurrency level
     // how many browser should be started simultaneous
-    concurrency: Infinity
-  })
-}
+    concurrency: Infinity,
+
+    nightmareOptions: {
+      skipScreenshot: true
+    }
+  });
+};

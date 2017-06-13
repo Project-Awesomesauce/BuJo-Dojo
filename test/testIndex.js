@@ -1,5 +1,6 @@
 var Nightmare = require('nightmare');
 var should = require('chai').should();
+var $ = require('jquery');
 
 describe('BuJo Dojo Forms', function () {
   this.timeout(15000);
@@ -24,7 +25,7 @@ describe('BuJo Dojo Forms', function () {
   describe('Add Button', function () {
     it('should add an item to the end of task list', function (done) {
       var expected = 'Test 42';
-      new Nightmare({ show: true })
+      new Nightmare({})
         .goto(url)
         .type('[name=item]', expected)
         .click('#add-item')
@@ -54,6 +55,78 @@ describe('BuJo Dojo Forms', function () {
           result.should.not.equal(expected);
           done();
         });
+    });
+  });
+
+  describe('Assign Category', function () {
+    it('should assign the appropriate icon based on category chosen', function (done) {
+      new Nightmare({ show: true })
+      .goto(url)
+      .select('#category-select', 'task')
+      .type('[name=item]', 'Task Icon')
+      .click('#add-item')
+      .goto(url)
+      .evaluate(function () {
+        var icons = document.querySelectorAll('i');
+        return $(icons[icons.length - 1]).attr('class');
+      })
+      .then(function (result) {
+        console.log('result');
+        result.should.equal('fa-li fa fa-square-o');
+        done();
+      });
+    });
+
+    it('should assign the appropriate icon based on category chosen', function (done) {
+      new Nightmare({ show: true })
+      .goto(url)
+      .select('#category-select', 'event')
+      .type('[name=item]', 'Event Icon')
+      .click('#add-item')
+      .goto(url)
+      .evaluate(function () {
+        var icons = document.querySelectorAll('i');
+        return $(icons[icons.length - 1]).attr('class');
+      })
+      .then(function (result) {
+        console.log('result');
+        result.should.equal('fa-li fa fa-circle-o');
+        done();
+      });
+    });
+
+    it('should assign the appropriate icon based on category chosen', function (done) {
+      new Nightmare({ show: true })
+      .goto(url)
+      .select('#category-select', 'note')
+      .type('[name=item]', 'Note Icon')
+      .click('#add-item')
+      .goto(url)
+      .evaluate(function () {
+        var icons = document.querySelectorAll('i');
+        return $(icons[icons.length - 1]).attr('class');
+      })
+      .then(function (result) {
+        console.log('result');
+        result.should.equal('fa-li fa fa-star-o');
+        done();
+      });
+    });
+  });
+
+  describe('Edit Button', function () {
+    it('should goto edit page for selected item', function (done) {
+      new Nightmare({ show: true })
+      .goto(url)
+      .wait()
+      .click('button .edit-item')[0]
+      .evaluate(function () {
+        return Nightmare.url();
+      })
+      .then(function (result) {
+        result.should.equal('test');
+        done();
+      });
     });
   });
 });
