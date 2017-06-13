@@ -1,0 +1,42 @@
+
+<div class="container" id="wrap">
+	
+  {{!--task creation--}}
+  <div class="row">
+    <div class="twelve columns top-page-margin">
+
+	<h3>Today's Date</h3>
+
+    </div>
+  </div>
+
+  {{!--task view--}}
+  <div class="row">
+    <div id="item-list" class="twelve columns">
+
+      <ul class="fa-ul">
+        {{#each tasks}}
+          {{#unless this.completed}}
+            <li data-category="{{category}}" data-completed="{{completed}}">
+              <span class="list-item">{{item}}</span>
+                <button data-id="{{id}}" class="edit-item" type="submit">Edit</button>
+                <button data-id="{{id}}" class="destroy-item" type="submit">X</button>
+            </li>
+          {{/unless}}
+        {{/each}}
+      </ul>
+
+      <ul class="fa-ul">
+        {{#each tasks}}
+          {{#if this.completed}}
+            <li data-category="{{category}}" data-completed="{{completed}}">
+              <span class="completed-item">{{item}}</span>              
+                <button data-id="{{id}}" class="edit-item" type="submit">Edit</button>
+            </li>
+          {{/if}}
+        {{/each}}
+      </ul>
+    </div>
+  </div>
+
+</div>

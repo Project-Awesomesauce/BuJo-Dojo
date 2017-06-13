@@ -1,3 +1,5 @@
+var moment = require('moment');
+
 module.exports = function(sequelize, DataTypes) {
     var Task = sequelize.define("Task", {
         item: {
@@ -18,14 +20,11 @@ module.exports = function(sequelize, DataTypes) {
             notNull: true,
             defaultValue: false
         },
+        // Updated to allow for date views!!!
         setDate: {
-            type: DataTypes.STRING,
-            allowNull: true
-                // To make setDate default to current date, use the following code instead:
-                // type: DataTypes.DATE,
-                // allowNull: false,
-                // defaultValue: DataTypes.NOW
-                // Leaving this commented in case we use a calendar option and would prefer a Unix date string.
+            type: DataTypes.DATE,
+            allowNull: false,
+            defaultValue: moment().format('YYYY-MM-DD')
         }
     });
     return Task;
