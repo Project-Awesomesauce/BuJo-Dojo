@@ -5,6 +5,9 @@ $(document).ready(function () {
     var itemInput = $('#item-text').val().trim();
     var categoryInput = document.getElementById('category-select').value;
 
+    var dateInput = $("#datepicker").datepicker("getDate");
+    console.log(dateInput);
+
     if (!itemInput) {
       return;
     }
@@ -12,6 +15,7 @@ $(document).ready(function () {
     $.post('/api/tasks', { 
       item: itemInput,
       category: categoryInput
+      //setDate: dateInput
     }).then(function () {
       location.reload();
     });
