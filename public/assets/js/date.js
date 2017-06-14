@@ -3,4 +3,7 @@ $(document).ready(function() {
   	$("#date").text(new Date().toDateString());
   }
   showDate();
+  $(function() {
+    $("#datepicker").datepicker();
+  });
 });

@@ -10,8 +10,8 @@ module.exports = function (app) {
   app.post('/api/tasks', function (req, res) {
     db.Task.create({
       item: req.body.item,
-      category: req.body.category
-      // setDate: ???
+      category: req.body.category,
+      setDate: req.body.date
     }).then(function (dbTask) {
       res.json(dbTask);
     });

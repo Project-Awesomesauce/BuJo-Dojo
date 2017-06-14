@@ -21,7 +21,7 @@ module.exports = function(sequelize, DataTypes) {
             defaultValue: false
         },
         setDate: {
-            type: DataTypes.DATE,
+            type: DataTypes.DATEONLY,
             allowNull: false,
             defaultValue: moment().format('YYYY-MM-DD')
         }
