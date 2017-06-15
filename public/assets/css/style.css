@@ -72,6 +72,7 @@ a:hover {
 }
 
 #datepicker {
+    font-size: 12px;
     position: relative;
     top: 1px;
     height: 38px;
@@ -138,7 +139,7 @@ button, .button-primary {
     height: auto;
     padding: 15px 25px;
     font-size: 12px;
-    margin: 15% 25%;
+    position: relative;
     background-color: white;
     border: 1px solid #D1D1D1;
 }
