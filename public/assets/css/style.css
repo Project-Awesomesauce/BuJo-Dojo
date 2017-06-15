@@ -122,6 +122,48 @@ button, .button-primary {
     border: 1px solid #D1D1D1 !important;
 }
 
+/* Datepicker styling */
+.ui-datepicker {
+    width: auto;
+    height: auto;
+    padding: 15px 25px;
+    font-size: 12px;
+    margin: 15% 25%;
+    background-color: white;
+    border: 1px solid #D1D1D1;
+}
+
+.ui-datepicker table {
+    width: 100%;
+}
+
+.ui-datepicker-title {
+    margin-top: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.ui-datepicker-prev, .ui-datepicker-next {
+    margin-top: 10px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.ui-datepicker-prev {
+    float: left;
+}
+.ui-datepicker-next {
+    float: right;
+}
+
+/* Leave footer CSS at the bottom */
+/*----------------------------------------------*/
 /* Sticky footer positioning and to get rid of weird L-R scroll bar */
 html, body {
 	height: 100%;
