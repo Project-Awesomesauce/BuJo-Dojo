@@ -66,4 +66,21 @@ module.exports = function (app) {
       res.render('date', hbsObject);
     });
   });
+
+  // Route for weekly view
+  app.get('/view-week', function(req, res) {
+    db.Task.findAll({
+      where: {
+        setDate: [moment().isoWeekday(1).format("YYYY-MM-DD"), moment().isoWeekday(2).format("YYYY-MM-DD"),
+          moment().isoWeekday(3).format("YYYY-MM-DD"), moment().isoWeekday(4).format("YYYY-MM-DD"),
+          moment().isoWeekday(5).format("YYYY-MM-DD"), moment().isoWeekday(6).format("YYYY-MM-DD"),
+          moment().isoWeekday(7).format("YYYY-MM-DD")]
+      }
+    }).then(function(dbTask) {
+      var hbsObject = {
+        tasks: dbTask
+      };
+      res.render('week', hbsObject);
+    });
+  });
 };
