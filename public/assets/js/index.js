@@ -1,11 +1,13 @@
 $(document).ready(function () {
+  console.log(new Date());
+
   function addItem(event) {
     event.preventDefault();
 
     var itemInput = $('#item-text').val().trim();
     var categoryInput = document.getElementById('category-select').value;
 
-    var dateInput = $("#datepicker").datepicker("getDate");
+    var dateInput = $("#datepicker").val();
     console.log(dateInput);
 
     if (!itemInput) {
@@ -14,8 +16,8 @@ $(document).ready(function () {
 
     $.post('/api/tasks', { 
       item: itemInput,
-      category: categoryInput
-      //setDate: dateInput
+      category: categoryInput,
+      setDate: dateInput
     }).then(function () {
       location.reload();
     });

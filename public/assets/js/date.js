@@ -1,9 +1,11 @@
 $(document).ready(function() {
   function showDate() {
-  	$("#date").text(new Date().toDateString());
+  	$("#date").text("Date to be shown here");
   }
   showDate();
   $(function() {
-    $("#datepicker").datepicker();
+    $("#datepicker").datepicker({
+    	dateFormat: "yy-mm-dd"
+    });
   });
 });
