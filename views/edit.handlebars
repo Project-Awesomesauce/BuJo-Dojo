@@ -6,8 +6,8 @@
     <div class="twelve columns top-page-margin">
 
       <input type="text" value="{{tasks.item}}" id="edit-text" name="item">
-      <input id="datepicker" type="text" name="setDate">
-      
+      <input id="datepicker" type="text" placeholder="{{tasks.setDate}}" name="setDate">
+ 
       <select name="completed" class="dropdown-text" id="completed">        
         {{#if tasks.completed}}
           <option value="true" selected="selected">Completed</option>
