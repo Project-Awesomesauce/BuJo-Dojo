@@ -73,12 +73,6 @@ module.exports = function (app) {
       where: {
         setDate: moment().isoWeekday(1).format('YYYY-MM-DD')
       }
-    }).then(function(dbTask) {
-      var hbsObject = {
-        tasks: dbTask
-      };
-      console.log(dbTask);
-      res.render('week', hbsObject);
     }).then(function (dayOne) {
       db.Task.findAll({
         where: {
