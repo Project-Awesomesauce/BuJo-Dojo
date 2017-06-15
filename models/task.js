@@ -12,8 +12,8 @@ module.exports = function(sequelize, DataTypes) {
         },
         category: {
             type: DataTypes.STRING,
-            notNull: true
-            //defaultValue: "task"
+            notNull: true,
+            defaultValue: "task"
         },
         completed: {
             type: DataTypes.BOOLEAN,
@@ -23,6 +23,7 @@ module.exports = function(sequelize, DataTypes) {
         setDate: {
             type: DataTypes.DATEONLY,
             allowNull: false,
+            defaultValue: moment().format('YYYY-MM-DD')
         }
     });
     return Task;
