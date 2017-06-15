@@ -80,6 +80,7 @@ module.exports = function (app) {
       var hbsObject = {
         tasks: dbTask
       };
+      console.log(dbTask);
       res.render('week', hbsObject);
     });
   });
