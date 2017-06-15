@@ -34,10 +34,10 @@ module.exports = function (app) {
     res.render('thanks');
   });
 
-  app.get('/date', function(req, res) {
+  app.get('/view/:date', function(req, res) {
     db.Task.findAll({
       where: {
-        setDate: moment().format('YYYY-MM-DD')
+        setDate: req.params.date
       }
     }).then(function(dbTask) {
       var hbsObject = {

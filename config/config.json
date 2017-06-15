@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "fya7b23w",
+    "password": null,
     "database": "bujoDB",
     "host": "127.0.0.1",
     "dialect": "mysql"

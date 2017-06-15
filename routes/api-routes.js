@@ -11,7 +11,7 @@ module.exports = function (app) {
     db.Task.create({
       item: req.body.item,
       category: req.body.category,
-      setDate: req.body.date
+      setDate: req.body.setDate
     }).then(function (dbTask) {
       res.json(dbTask);
     });

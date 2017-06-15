@@ -1,4 +1,6 @@
 $(document).ready(function () {
+  console.log(new Date());
+
   function addItem(event) {
     event.preventDefault();
 
