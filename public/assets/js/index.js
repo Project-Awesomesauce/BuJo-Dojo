@@ -14,8 +14,8 @@ $(document).ready(function () {
 
     $.post('/api/tasks', { 
       item: itemInput,
-      category: categoryInput
-      //setDate: dateInput
+      category: categoryInput,
+      setDate: dateInput
     }).then(function () {
       location.reload();
     });
