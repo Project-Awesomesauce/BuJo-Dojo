@@ -1,6 +1,6 @@
 $(document).ready(function() {
   function showDate() {
-  	$("#date").html(new Date());
+  	$("#date").html(moment().format("dddd, MMMM Do, YYYY"));
   }
   showDate();
   $(function() {
