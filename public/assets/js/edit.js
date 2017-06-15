@@ -3,9 +3,8 @@ $(document).ready(function () {
     event.preventDefault();
     var data = {
       id: $(this).data('id'),
-      item: $(this).prev().prev().val()
-        .trim(),
-      completed: $(this).prev().val()
+      item: $('#edit-text').val().trim(),
+      completed: $('#completed').val()
     };
     $.ajax({
       method: 'PUT',
