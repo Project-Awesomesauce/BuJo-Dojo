@@ -72,13 +72,18 @@ a:hover {
 }
 
 #datepicker {
+    font-size: 12px;
     position: relative;
-    top: 1px;
+    top: 0px;
     height: 38px;
     border: 1px solid #D1D1D1;
     width: 20%;
     min-width: 100px;
     margin-right: 10px;
+}
+
+#date {
+    text-align: center;
 }
 
 .destroy-item {
@@ -138,7 +143,7 @@ button, .button-primary {
     height: auto;
     padding: 15px 25px;
     font-size: 12px;
-    margin: 15% 25%;
+    position: relative;
     background-color: white;
     border: 1px solid #D1D1D1;
 }
