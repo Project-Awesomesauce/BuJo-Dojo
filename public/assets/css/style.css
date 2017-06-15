@@ -82,6 +82,10 @@ a:hover {
     margin-right: 10px;
 }
 
+#date {
+    text-align: center;
+}
+
 .destroy-item {
     margin-left: 5px;
     width: 30px;
