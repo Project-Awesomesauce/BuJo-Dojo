@@ -23,7 +23,6 @@ module.exports = function(sequelize, DataTypes) {
         setDate: {
             type: DataTypes.DATEONLY,
             allowNull: false,
-            defaultValue: moment().format('YYYY-MM-DD')
         }
     });
     return Task;

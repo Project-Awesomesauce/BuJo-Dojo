@@ -5,7 +5,7 @@ $(document).ready(function () {
     var itemInput = $('#item-text').val().trim();
     var categoryInput = document.getElementById('category-select').value;
 
-    var dateInput = $("#datepicker").datepicker("getDate");
+    var dateInput = $("#datepicker").val();
     console.log(dateInput);
 
     if (!itemInput) {
