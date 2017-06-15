@@ -1,6 +1,6 @@
 $(document).ready(function() {
   function showDate() {
-  	$("#date").text("Date to be shown here");
+  	$("#date").html(new Date());
   }
   showDate();
   $(function() {
