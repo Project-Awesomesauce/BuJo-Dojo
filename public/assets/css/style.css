@@ -138,10 +138,16 @@ button, .button-primary {
 }
 
 /* Datepicker calendar styling */
+
+td, th {
+    padding: 5px 5px;
+}
+
 .ui-datepicker {
     width: auto;
     height: auto;
     padding: 0px 25px;
+    font-weight: 400;
     font-size: 12px;
     position: relative;
     background-color: white;
@@ -170,12 +176,36 @@ button, .button-primary {
     overflow: hidden;
 }
 
+.ui-datepicker td span, .ui-datepicker td a {
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    color: #666666;
+}
+
+.ui-datepicker-calendar .ui-state-active {
+    background: turquoise;
+    border: 1px solid #666666;
+    font-weight: 600;
+    position: relative;
+    margin: -1px;
+}
+
 .ui-datepicker-prev {
     float: left;
 }
 .ui-datepicker-next {
     float: right;
 }
+
+.ui-datepicker-today a.ui-state-highlight {
+    border: 1px solid #D1D1D1;
+    position: relative;
+    margin: -1px;
+}
+
 
 /* Leave footer CSS at the bottom */
 /*----------------------------------------------*/
