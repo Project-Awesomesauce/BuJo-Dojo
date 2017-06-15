@@ -52,7 +52,7 @@ a:hover {
 #edit-text, #item-text {
     font-size: 12px;
     min-width: 200px;
-    width: 70%;
+    width: 50%;
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -69,6 +69,16 @@ a:hover {
     top: 0px;
     height: 38px;
     border: 1px solid #D1D1D1;
+}
+
+#datepicker {
+    position: relative;
+    top: 1px;
+    height: 38px;
+    border: 1px solid #D1D1D1;
+    width: 20%;
+    min-width: 100px;
+    margin-right: 10px;
 }
 
 .destroy-item {
@@ -122,7 +132,7 @@ button, .button-primary {
     border: 1px solid #D1D1D1 !important;
 }
 
-/* Datepicker styling */
+/* Datepicker calendar styling */
 .ui-datepicker {
     width: auto;
     height: auto;
