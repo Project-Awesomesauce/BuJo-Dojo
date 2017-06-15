@@ -12,9 +12,9 @@ module.exports = function (app) {
     });
   });
 
-  app.get('/home', function(req, res) {
+  app.get('/home', function (req, res) {
     res.render('home');
-  })
+  });
 
   app.get('/edit/:id', function (req, res) {
     db.Task.findOne({
@@ -29,7 +29,7 @@ module.exports = function (app) {
       res.render('edit', hbsObject);
     });
   });
-  
+
   app.get('/contact', function (req, res) {
     res.render('contact');
   });
@@ -39,12 +39,12 @@ module.exports = function (app) {
   });
 
   // Route for viewing today's date
-  app.get('/view-today', function(req, res) {
+  app.get('/view-today', function (req, res) {
     db.Task.findAll({
       where: {
         setDate: moment().format('YYYY-MM-DD')
       }
-    }).then(function(dbTask) {
+    }).then(function (dbTask) {
       var hbsObject = {
         tasks: dbTask
       };
@@ -54,12 +54,12 @@ module.exports = function (app) {
   });
 
   // Route for viewing a specific date
-  app.get('/view-date/:date', function(req, res) {
+  app.get('/view-date/:date', function (req, res) {
     db.Task.findAll({
       where: {
         setDate: req.params.date
       }
-    }).then(function(dbTask) {
+    }).then(function (dbTask) {
       var hbsObject = {
         tasks: dbTask
       };
@@ -68,19 +68,58 @@ module.exports = function (app) {
   });
 
   // Route for weekly view
-  app.get('/view-week', function(req, res) {
+  app.get('/view-week', function (req, res) {
     db.Task.findAll({
       where: {
-        setDate: [moment().isoWeekday(1).format("YYYY-MM-DD"), moment().isoWeekday(2).format("YYYY-MM-DD"),
-          moment().isoWeekday(3).format("YYYY-MM-DD"), moment().isoWeekday(4).format("YYYY-MM-DD"),
-          moment().isoWeekday(5).format("YYYY-MM-DD"), moment().isoWeekday(6).format("YYYY-MM-DD"),
-          moment().isoWeekday(7).format("YYYY-MM-DD")]
+        setDate: moment().isoWeekday(1).format('YYYY-MM-DD')
       }
-    }).then(function(dbTask) {
-      var hbsObject = {
-        tasks: dbTask
-      };
-      res.render('week', hbsObject);
+    }).then(function (dayOne) {
+      db.Task.findAll({
+        where: {
+          setDate: moment().isoWeekday(2).format('YYYY-MM-DD')
+        }
+      }).then(function (dayTwo) {
+        db.Task.findAll({
+          where: {
+            setDate: moment().isoWeekday(3).format('YYYY-MM-DD')
+          }
+        }).then(function (dayThree) {
+          db.Task.findAll({
+            where: {
+              setDate: moment().isoWeekday(4).format('YYYY-MM-DD')
+            }
+          }).then(function (dayFour) {
+            db.Task.findAll({
+              where: {
+                setDate: moment().isoWeekday(5).format('YYYY-MM-DD')
+              }
+            }).then(function (dayFive) {
+              db.Task.findAll({
+                where: {
+                  setDate: moment().isoWeekday(6).format('YYYY-MM-DD')
+                }
+              }).then(function (daySix) {
+                db.Task.findAll({
+                  where: {
+                    setDate: moment().isoWeekday(7).format('YYYY-MM-DD')
+                  }
+                }).then(function (daySeven) {
+                  var hbsObject = {
+                    dayOne: dayOne,
+                    dayTwo: dayTwo,
+                    dayThree: dayThree,
+                    dayFour: dayFour,
+                    dayFive: dayFive,
+                    daySix: daySix,
+                    daySeven: daySeven
+                  };
+                  res.render('week', hbsObject);
+                });
+              });
+            });
+          });
+        });
+      });
     });
   });
 };

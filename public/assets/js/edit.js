@@ -4,6 +4,7 @@ $(document).ready(function () {
     var data = {
       id: $(this).data('id'),
       item: $('#edit-text').val().trim(),
+      setDate: $('#datepicker').val(),
       completed: $('#completed').val()
     };
     $.ajax({
