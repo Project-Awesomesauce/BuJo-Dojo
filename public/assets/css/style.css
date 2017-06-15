@@ -141,7 +141,7 @@ button, .button-primary {
 .ui-datepicker {
     width: auto;
     height: auto;
-    padding: 15px 25px;
+    padding: 0px 25px;
     font-size: 12px;
     position: relative;
     background-color: white;
