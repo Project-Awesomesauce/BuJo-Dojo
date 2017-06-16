@@ -17,7 +17,7 @@ var assignCategory = function (category, completed) {
   } else if (category === 'research' && completed === true) {
     return 'fa-eye-slash';
   }
-  return 'no match';
+  return 'fa-circle';
 };
 
 // exported for testing

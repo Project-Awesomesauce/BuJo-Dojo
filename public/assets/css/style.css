@@ -21,6 +21,10 @@ h1 {
     top: .7em !important;
 }
 
+#home-list .fa-li {
+    top: .33em !important;
+}
+
 .weekly-view .fa-li {
     top: .33em !important;
 }
