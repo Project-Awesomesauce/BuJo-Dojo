@@ -21,6 +21,10 @@ h1 {
     top: .7em !important;
 }
 
+.weekly-view .fa-li {
+    top: .33em !important;
+}
+
 #redirect-message {
     text-align: center;
 }
@@ -119,6 +123,16 @@ a:hover {
 
 .completed-item {
     opacity: 0.5;
+}
+
+.weekly-view {
+    border: solid;
+    padding: 5px;
+    margin: 5px;
+}
+
+.date {
+    font-weight: bold;
 }
 
 ul {
