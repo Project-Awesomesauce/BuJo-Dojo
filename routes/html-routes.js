@@ -65,8 +65,10 @@ module.exports = function (app) {
       }
     }).then(function (dbTask) {
       var hbsObject = {
-        tasks: dbTask
+        tasks: dbTask,
+        date: req.params.date
       };
+      console.log('view-date', hbsObject.date);
       res.render('date', hbsObject);
     });
   });
