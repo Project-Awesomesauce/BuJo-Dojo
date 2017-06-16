@@ -8,12 +8,8 @@ module.exports = function (app) {
         tasks: dbTask
       };
       console.log(hbsObject);
-      res.render('index', hbsObject);
+      res.render('home', hbsObject);
     });
-  });
-
-  app.get('/home', function (req, res) {
-    res.render('home');
   });
 
   app.get('/edit/:id', function (req, res) {
