@@ -5,7 +5,8 @@ $(document).ready(function() {
   showDate();
   $(function() {
     $("#datepicker").datepicker({
-    	dateFormat: "yy-mm-dd"
+      dateFormat: "yy-mm-dd",
     });
+    $("#datepicker").datepicker("setDate", new Date());
   });
 });
