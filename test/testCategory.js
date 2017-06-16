@@ -1,6 +1,7 @@
 var should = require('chai').should();
 var assignCategory = require('../public/assets/js/category');
 
+// tests assignCategory function using mocha and chai
 describe('BuJo Dojo Functions', function () {
   describe('Assign Category', function () {
     it('should assign bullet when task/complete', function () {

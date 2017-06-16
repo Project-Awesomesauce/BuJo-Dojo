@@ -1,10 +1,10 @@
 $(document).ready(function () {
+  // updates db with changed values
   function updateItem(event) {
     event.preventDefault();
+
     var date = $('#datepicker').val();
-    if (date === '') {
-      date = $('#datepicker').attr('placeholder');
-    }
+
     var data = {
       id: $(this).data('id'),
       item: $('#edit-text').val().trim(),
@@ -16,7 +16,8 @@ $(document).ready(function () {
       url: '/api/tasks',
       data: data,
       success: function () {
-        document.location = '/view-today';
+        var url = '../view-date/' + date;
+        document.location = url;
       }
     });
   }

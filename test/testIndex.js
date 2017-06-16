@@ -1,6 +1,8 @@
 var Nightmare = require('nightmare');
 var should = require('chai').should();
 
+// utilizing nightmare to test ui interaction
+// further tests to be implemented for added views
 describe('BuJo Dojo Forms', function () {
   this.timeout(15000);
 

@@ -1,12 +1,14 @@
 var db = require('../models');
 
 module.exports = function (app) {
+  // get all route
   app.get('/api/tasks', function (req, res) {
     db.Task.findAll({}).then(function (dbTask) {
       res.json(dbTask);
     });
   });
 
+  // create item route
   app.post('/api/tasks', function (req, res) {
     db.Task.create({
       item: req.body.item,
@@ -43,6 +45,7 @@ module.exports = function (app) {
       });
   });
 
+  // delete item route
   app.delete('/api/tasks/:id', function (req, res) {
     db.Task.destroy({
       where: {

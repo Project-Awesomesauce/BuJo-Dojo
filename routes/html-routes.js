@@ -7,7 +7,6 @@ module.exports = function (app) {
       var hbsObject = {
         tasks: dbTask
       };
-      console.log(hbsObject);
       res.render('home', hbsObject);
     });
   });
@@ -26,10 +25,12 @@ module.exports = function (app) {
         id: req.params.id
       }
     }).then(function (dbTask) {
+      var date = moment(dbTask.dataValues.setDate).add(6, 'hours').format('YYYY-MM-DD');
       var hbsObject = {
-        tasks: dbTask
+        tasks: dbTask,
+        date: date
       };
-      console.log(hbsObject);
+      console.log(date);
       res.render('edit', hbsObject);
     });
   });
@@ -53,7 +54,6 @@ module.exports = function (app) {
         tasks: dbTask
       };
       res.render('date', hbsObject);
-      console.log(dbTask);
     });
   });
 
@@ -65,13 +65,15 @@ module.exports = function (app) {
       }
     }).then(function (dbTask) {
       var hbsObject = {
-        tasks: dbTask
+        tasks: dbTask,
+        date: req.params.date
       };
       res.render('date', hbsObject);
     });
   });
 
   // Route for weekly view
+  // promise chain allows us to pull each day of the week in one get
   app.get('/view-week', function (req, res) {
     db.Task.findAll({
       where: {

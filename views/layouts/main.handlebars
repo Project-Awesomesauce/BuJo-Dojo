@@ -1,88 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <title>BuJo Dojo</title>
-    <meta charset="UTF-8">
+<head>
+  <title>BuJo Dojo</title>
+  <meta charset="UTF-8"> {{!-- For Formspree --}}
+  <meta name="referrer" content="origin">
 
-    {{!-- For Formspree --}}
-    <meta name="referrer" content="origin">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../assets/css/normalize.css">
+  <link rel="stylesheet" href="../assets/css/skeleton.css">
+  <link rel="stylesheet" href="../assets/css/style.css"> {{!-- jQuery --}}
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
-    <link rel="stylesheet" href="../assets/css/normalize.css">
-    <link rel="stylesheet" href="../assets/css/skeleton.css">
-    <link rel="stylesheet" href="../assets/css/style.css">
+  {{!--jQuery UI --}}
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+    crossorigin="anonymous"></script>
 
-    {{!-- jQuery --}}
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  {{!-- Using Moment.js in the browser --}}
+  <script src="http://momentjs.com/downloads/moment-with-locales.js"></script>
+  <script>
+    moment().format();
+  </script>
 
-    {{!--jQuery UI --}}
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
-      integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
-      crossorigin="anonymous"></script>
+  <!-- Font Awesome Link! -->
+  <script src="https://use.fontawesome.com/0a2ce55563.js"></script>
 
-    {{!-- Using Moment.js in the browser --}}
-    <script src="https://momentjs.com/downloads/moment-with-locales.js"></script>
-    <script>
-      moment().format();
-    </script>
+  <!-- Favicon -->
+  <link rel="icon" href="./assets/images/favicon.ico" type="image/gif" sizes="16x16"> {{!-- Google Fonts --}}
+  <link href="https://fonts.googleapis.com/css?family=Megrim|Raleway:400,600" rel="stylesheet">
+  
+  {{!-- Using Moment.js in the browser --}}
+  <script src="https://momentjs.com/downloads/moment-with-locales.js"></script>
+  <script>
+    moment().format();
+  </script>
+</head>
 
-    <!-- Font Awesome Link! -->
-    <script src="https://use.fontawesome.com/0a2ce55563.js"></script>
+<body>
 
-    <!-- Favicon -->
-    <link rel="icon" href="./assets/images/favicon.ico" type="image/gif" sizes="16x16">
-
-    {{!-- Google Fonts --}}
-    <link href="https://fonts.googleapis.com/css?family=Megrim|Raleway:400,600" rel="stylesheet">
-
-  </head>
-
-
-  <body>
-
-    <header>
-      <div class="container">
-        <div class="row">
-          <div class="twelve columns">
-            <a href="/"><h1>BuJo Dojo</h1></a>
-          </div>
-        </div>
-        <div class="row">
-          <div class="one column">
-            <a href="/">Home</a>
-          </div>
-          <div class="one column">
-            <a href="/view-today">Daily</a>
-          </div>
-          <div class="one column">
-            <a href="/view-week">Weekly</a>
-          </div>
-          <div class="one column">
-            <a href="/contact">Contact</a>
-          </div>
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="twelve columns">
+          <a href="/">
+            <h1>BuJo Dojo</h1>
+          </a>
         </div>
       </div>
-    </header>
+      <div class="row">
+        <div class="one column">
+          <a href="/">Home</a>
+        </div>
+        <div class="one column">
+          <a href="/view-today">Daily</a>
+        </div>
+        <div class="one column">
+          <a href="/view-week">Weekly</a>
+        </div>
+        <div class="one columns">
+          <a href="/contact">Contact</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="one column">
+          <a href="/">Home</a>
+        </div>
+        <div class="one column">
+          <a href="/view-today">Daily</a>
+        </div>
+        <div class="one column">
+          <a href="/view-week">Weekly</a>
+        </div>
+        <div class="one column">
+          <a href="/contact">Contact</a>
+        </div>
+      </div>
+    </div>
+</header>
 
-    {{{ body }}}
+  {{{ body }}}
 
-    <!-- Begin Footer -->
-    <footer id="footer">
+  <!-- Begin Footer -->
+  <footer id="footer">
 
-      <p>Created by <a href="https://github.com/Project-Awesomesauce/BuJo-Dojo#bujo-dojo" target="_blank">Project Awesomesauce!</a> &copy; 2017 &mdash; Want to <a href="/contact">contact us</a>?</p>
-      <p><a href="http://bulletjournal.com/get-started/" target="_blank">Wait, what the heck is a bullet journal?</a></p>
+    <p>Created by <a href="https://github.com/Project-Awesomesauce/BuJo-Dojo#bujo-dojo" target="_blank">Project Awesomesauce!</a>      &copy; 2017 &mdash; Want to <a href="/contact">contact us</a>?</p>
+    <p><a href="http://bulletjournal.com/get-started/" target="_blank">Wait, what the heck is a bullet journal?</a></p>
 
     <!-- End Footer -->
-    </footer>
+  </footer>
 
-    <script src="../assets/js/category.js"></script>
-    <script src="../assets/js/index.js"></script>
-    <script src="../assets/js/edit.js"></script>
-    <script src="../assets/js/date.js"></script>
-    <script src="../assets/js/week.js"></script>
-    
-  </body>
-  
+  <script src="../assets/js/category.js"></script>
+  <script src="../assets/js/index.js"></script>
+  <script src="../assets/js/edit.js"></script>
+  <script src="../assets/js/date.js"></script>
+  <script src="../assets/js/week.js"></script>
+
+</body>
+
 </html>

@@ -69,6 +69,18 @@ Anyone who wants to keep better track of their day to day (and who wants to be h
 
 + [Formspree.io](https://formspree.io/ "Formspree.io") - Functional HTML Forms (used for Contact form)
 
+## Demo
+
+### Home Page
+![daily-page](https://user-images.githubusercontent.com/22500207/27207217-22c51c24-520b-11e7-8114-237d46b4c7dd.gif "BuJo - Home View")
+
++ The Home Page allows the user to add tasks, to include selecting category and date.
+
+### Weekly Page
+![weekly-page](https://user-images.githubusercontent.com/22500207/27241999-187548b8-52a9-11e7-92f9-213237138302.gif "BuJo - Weekly View")
+
++ The Weekly page allows the user to select any day of the current week, opening the daily page for that day.
+
 ## Contributors
 + [Michael Eggers](https://github.com/mdeggers84 "GitHub - Michael") :smiley_cat:
 + [Katie Geckle](https://github.com/katiearina "GitHub - Katie") :tulip:

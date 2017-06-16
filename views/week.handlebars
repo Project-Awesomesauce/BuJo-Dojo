@@ -2,217 +2,178 @@
 
   <div class="row">
 
-    <div class="six columns top-page-margin">
+    <div class="twelve columns top-page-margin">
 
       <div class="row weekly-view" id="day-one-div">
 
-      	<span id="day-one-span"></span>
-
-      	<ul class="fa-ul">
-          {{#each dayOne}}
-	        {{#unless this.completed}}
-	          <li data-category="{{category}}" data-completed="{{completed}}">
-	            <span class="list-item">{{item}}</span>
-	              <button data-id="{{id}}" class="edit-item" type="submit">Edit</button>
-	              <button data-id="{{id}}" class="destroy-item" type="submit">X</button>
-	          </li>
-	        {{/unless}}
-	      {{/each}}
-	    </ul>
+        <a href="#nogo"><span class="date" id="day-one-span" data-date=""></span></a>
 
         <ul class="fa-ul">
-          {{#each dayOne}}
-            {{#if this.completed}}
-              <li data-category="{{category}}" data-completed="{{completed}}">
-                <span class="completed-item">{{item}}</span>              
-                  <button data-id="{{id}}" class="edit-item" type="submit">Edit</button>
-              </li>
-            {{/if}}
-          {{/each}}
+          {{#each dayOne}} {{#unless this.completed}}
+          <li data-category="{{category}}" data-completed="{{completed}}">
+            <span class="list-item">{{item}}</span>
+
+          </li>
+          {{/unless}} {{/each}}
+        </ul>
+
+        <ul class="fa-ul">
+          {{#each dayOne}} {{#if this.completed}}
+          <li data-category="{{category}}" data-completed="{{completed}}">
+            <span class="completed-item">{{item}}</span>
+
+          </li>
+          {{/if}} {{/each}}
         </ul>
 
       </div>
 
       <div class="row weekly-view" id="day-two-div">
 
-		<span id="day-two-span"></span>
-
-		<ul class="fa-ul">
-          {{#each dayTwo}}
-	        {{#unless this.completed}}
-	          <li data-category="{{category}}" data-completed="{{completed}}">
-	            <span class="list-item">{{item}}</span>
-	              <button data-id="{{id}}" class="edit-item" type="submit">Edit</button>
-	              <button data-id="{{id}}" class="destroy-item" type="submit">X</button>
-	          </li>
-	        {{/unless}}
-	      {{/each}}
-	    </ul>
+        <a href="#nogo"><span class="date" id="day-two-span" data-date=""></span></a>
 
         <ul class="fa-ul">
-          {{#each dayTwo}}
-            {{#if this.completed}}
-              <li data-category="{{category}}" data-completed="{{completed}}">
-                <span class="completed-item">{{item}}</span>              
-                  <button data-id="{{id}}" class="edit-item" type="submit">Edit</button>
-              </li>
-            {{/if}}
-          {{/each}}
+          {{#each dayTwo}} {{#unless this.completed}}
+          <li data-category="{{category}}" data-completed="{{completed}}">
+            <span class="list-item">{{item}}</span>
+
+          </li>
+          {{/unless}} {{/each}}
+        </ul>
+
+        <ul class="fa-ul">
+          {{#each dayTwo}} {{#if this.completed}}
+          <li data-category="{{category}}" data-completed="{{completed}}">
+            <span class="completed-item">{{item}}</span>
+
+          </li>
+          {{/if}} {{/each}}
         </ul>
 
       </div>
 
       <div class="row weekly-view" id="day-three-div">
 
-		<span id="day-three-span"></span>
-
-		<ul class="fa-ul">
-          {{#each dayThree}}
-	        {{#unless this.completed}}
-	          <li data-category="{{category}}" data-completed="{{completed}}">
-	            <span class="list-item">{{item}}</span>
-	              <button data-id="{{id}}" class="edit-item" type="submit">Edit</button>
-	              <button data-id="{{id}}" class="destroy-item" type="submit">X</button>
-	          </li>
-	        {{/unless}}
-	      {{/each}}
-	    </ul>
+        <a href="#nogo"><span class="date" id="day-three-span" data-date=""></span></a>
 
         <ul class="fa-ul">
-          {{#each dayThree}}
-            {{#if this.completed}}
-              <li data-category="{{category}}" data-completed="{{completed}}">
-                <span class="completed-item">{{item}}</span>              
-                  <button data-id="{{id}}" class="edit-item" type="submit">Edit</button>
-              </li>
-            {{/if}}
-          {{/each}}
+          {{#each dayThree}} {{#unless this.completed}}
+          <li data-category="{{category}}" data-completed="{{completed}}">
+            <span class="list-item">{{item}}</span>
+
+          </li>
+          {{/unless}} {{/each}}
+        </ul>
+
+        <ul class="fa-ul">
+          {{#each dayThree}} {{#if this.completed}}
+          <li data-category="{{category}}" data-completed="{{completed}}">
+            <span class="completed-item">{{item}}</span>
+
+          </li>
+          {{/if}} {{/each}}
         </ul>
 
       </div>
 
       <div class="row weekly-view" id="day-four-div">
 
-		<span id="day-four-span"></span>
-
-		<ul class="fa-ul">
-          {{#each dayFour}}
-	        {{#unless this.completed}}
-	          <li data-category="{{category}}" data-completed="{{completed}}">
-	            <span class="list-item">{{item}}</span>
-	              <button data-id="{{id}}" class="edit-item" type="submit">Edit</button>
-	              <button data-id="{{id}}" class="destroy-item" type="submit">X</button>
-	          </li>
-	        {{/unless}}
-	      {{/each}}
-	    </ul>
+        <a href="#nogo"><span class="date" id="day-four-span" data-date=""></span></a>
 
         <ul class="fa-ul">
-          {{#each dayFour}}
-            {{#if this.completed}}
-              <li data-category="{{category}}" data-completed="{{completed}}">
-                <span class="completed-item">{{item}}</span>              
-                  <button data-id="{{id}}" class="edit-item" type="submit">Edit</button>
-              </li>
-            {{/if}}
-          {{/each}}
+          {{#each dayFour}} {{#unless this.completed}}
+          <li data-category="{{category}}" data-completed="{{completed}}">
+            <span class="list-item">{{item}}</span>
+
+          </li>
+          {{/unless}} {{/each}}
+        </ul>
+
+        <ul class="fa-ul">
+          {{#each dayFour}} {{#if this.completed}}
+          <li data-category="{{category}}" data-completed="{{completed}}">
+            <span class="completed-item">{{item}}</span>
+
+          </li>
+          {{/if}} {{/each}}
         </ul>
 
       </div>
 
-    </div>
-	
-	<div class="six columns top-page-margin">
+      <div class="row weekly-view" id="day-five-div">
 
-	  <div class="row weekly-view" id="day-five-div">
-
-	  	<span id="day-five-span"></span>
-
-	  	<ul class="fa-ul">
-          {{#each dayFive}}
-	        {{#unless this.completed}}
-	          <li data-category="{{category}}" data-completed="{{completed}}">
-	            <span class="list-item">{{item}}</span>
-	              <button data-id="{{id}}" class="edit-item" type="submit">Edit</button>
-	              <button data-id="{{id}}" class="destroy-item" type="submit">X</button>
-	          </li>
-	        {{/unless}}
-	      {{/each}}
-	    </ul>
+        <a href="#nogo"><span class="date" id="day-five-span" data-date=""></span></a>
 
         <ul class="fa-ul">
-          {{#each dayFive}}
-            {{#if this.completed}}
-              <li data-category="{{category}}" data-completed="{{completed}}">
-                <span class="completed-item">{{item}}</span>              
-                  <button data-id="{{id}}" class="edit-item" type="submit">Edit</button>
-              </li>
-            {{/if}}
-          {{/each}}
+          {{#each dayFive}} {{#unless this.completed}}
+          <li data-category="{{category}}" data-completed="{{completed}}">
+            <span class="list-item">{{item}}</span>
+
+          </li>
+          {{/unless}} {{/each}}
+        </ul>
+
+        <ul class="fa-ul">
+          {{#each dayFive}} {{#if this.completed}}
+          <li data-category="{{category}}" data-completed="{{completed}}">
+            <span class="completed-item">{{item}}</span>
+
+          </li>
+          {{/if}} {{/each}}
         </ul>
 
       </div>
 
       <div class="row weekly-view" id="day-six-div">
 
-		<span id="day-six-span"></span>
-
-		<ul class="fa-ul">
-          {{#each daySix}}
-	        {{#unless this.completed}}
-	          <li data-category="{{category}}" data-completed="{{completed}}">
-	            <span class="list-item">{{item}}</span>
-	              <button data-id="{{id}}" class="edit-item" type="submit">Edit</button>
-	              <button data-id="{{id}}" class="destroy-item" type="submit">X</button>
-	          </li>
-	        {{/unless}}
-	      {{/each}}
-	    </ul>
+        <a href="#nogo"><span class="date" id="day-six-span" data-date=""></span></a>
 
         <ul class="fa-ul">
-          {{#each daySix}}
-            {{#if this.completed}}
-              <li data-category="{{category}}" data-completed="{{completed}}">
-                <span class="completed-item">{{item}}</span>              
-                  <button data-id="{{id}}" class="edit-item" type="submit">Edit</button>
-              </li>
-            {{/if}}
-          {{/each}}
+          {{#each daySix}} {{#unless this.completed}}
+          <li data-category="{{category}}" data-completed="{{completed}}">
+            <span class="list-item">{{item}}</span>
+
+          </li>
+          {{/unless}} {{/each}}
+        </ul>
+
+        <ul class="fa-ul">
+          {{#each daySix}} {{#if this.completed}}
+          <li data-category="{{category}}" data-completed="{{completed}}">
+            <span class="completed-item">{{item}}</span>
+
+          </li>
+          {{/if}} {{/each}}
         </ul>
 
       </div>
 
       <div class="row weekly-view" id="day-seven-div">
 
-		<span id="day-seven-span"></span>
-
-		<ul class="fa-ul">
-          {{#each daySeven}}
-	        {{#unless this.completed}}
-	          <li data-category="{{category}}" data-completed="{{completed}}">
-	            <span class="list-item">{{item}}</span>
-	              <button data-id="{{id}}" class="edit-item" type="submit">Edit</button>
-	              <button data-id="{{id}}" class="destroy-item" type="submit">X</button>
-	          </li>
-	        {{/unless}}
-	      {{/each}}
-	    </ul>
+        <a href="#nogo"><span class="date" id="day-seven-span" data-date=""></span></a>
 
         <ul class="fa-ul">
-          {{#each daySeven}}
-            {{#if this.completed}}
-              <li data-category="{{category}}" data-completed="{{completed}}">
-                <span class="completed-item">{{item}}</span>              
-                  <button data-id="{{id}}" class="edit-item" type="submit">Edit</button>
-              </li>
-            {{/if}}
-          {{/each}}
+          {{#each daySeven}} {{#unless this.completed}}
+          <li data-category="{{category}}" data-completed="{{completed}}">
+            <span class="list-item">{{item}}</span>
+
+          </li>
+          {{/unless}} {{/each}}
+        </ul>
+
+        <ul class="fa-ul">
+          {{#each daySeven}} {{#if this.completed}}
+          <li data-category="{{category}}" data-completed="{{completed}}">
+            <span class="completed-item">{{item}}</span>
+
+          </li>
+          {{/if}} {{/each}}
         </ul>
 
       </div>
 
-	</div>
-	
+    </div>
+
   </div>
 
 </div>
