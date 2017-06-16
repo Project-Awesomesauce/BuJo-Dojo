@@ -45,7 +45,7 @@ $(document).ready(function () {
     $('li').each(function () {
       category = $(this).attr('data-category');  
       completed = $(this).attr('data-completed');
-      icon = assignCategory(category, JSON.parse(completed));
+      icon = assignCategory(category, completed);
       var iconListItem = $('<i>').addClass("fa-li fa");
       iconListItem.addClass(icon);
       $(this).append(iconListItem);
