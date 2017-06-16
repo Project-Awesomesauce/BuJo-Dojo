@@ -16,7 +16,7 @@ $(document).ready(function () {
       url: '/api/tasks',
       data: data,
       success: function () {
-        document.location = '/day-view';
+        document.location = '/view-today';
       }
     });
   }

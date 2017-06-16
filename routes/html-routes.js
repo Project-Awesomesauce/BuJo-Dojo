@@ -12,6 +12,14 @@ module.exports = function (app) {
     });
   });
 
+  app.get('/view-month', function (req, res) {
+    res.render('coming-soon');
+  });
+
+  app.get('/future-log', function (req, res) {
+    res.render('coming-soon');
+  });
+
   app.get('/edit/:id', function (req, res) {
     db.Task.findOne({
       where: {
