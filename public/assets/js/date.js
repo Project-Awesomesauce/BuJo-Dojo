@@ -1,7 +1,7 @@
 $(document).ready(function () {
   // sets current or selected date based on passed argument
   function showDate(date) {
-  	$('#date').html(moment(date).format('dddd, MMMM Do, YYYY'));
+    $('#date').html(moment(date).format('dddd, MMMM Do, YYYY'));
     $(function () {
       $('#datepicker').datepicker({
         dateFormat: 'yy-mm-dd'

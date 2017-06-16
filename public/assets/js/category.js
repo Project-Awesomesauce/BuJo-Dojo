@@ -1,3 +1,4 @@
+// logic for assigning icon based on category selected
 var assignCategory = function (category, completed) {
   if (category === 'task' && completed === false) {
     return 'fa-square-o';
@@ -19,6 +20,8 @@ var assignCategory = function (category, completed) {
   return 'no match';
 };
 
+// exported for testing
+// condition prevents export on frontend
 if (typeof module !== 'undefined') {
   module.exports = assignCategory;
 } else {

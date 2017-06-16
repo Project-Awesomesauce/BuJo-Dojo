@@ -73,6 +73,7 @@ module.exports = function (app) {
   });
 
   // Route for weekly view
+  // promise chain allows us to pull each day of the week in one get
   app.get('/view-week', function (req, res) {
     db.Task.findAll({
       where: {

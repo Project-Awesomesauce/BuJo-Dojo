@@ -4,25 +4,25 @@
   <div class="row">
     <div class="twelve columns top-page-margin">
 
-	  <h5>Welcome! What would you like to do?</h5>
+      <h5>Welcome! What would you like to do?</h5>
 
-    <p>Add a task:</p>
+      <p>Add a task:</p>
 
-    <form id="new-item">
-      <select id="category-select" name="category" class="dropdown-text">
-        <option value="task">Task</option>
-        <option value="event">Event</option>
-        <option value="note">Note</option>
-        <option value="research">Research</option>
-      </select>
+      <form id="new-item">
+        <select id="category-select" name="category" class="dropdown-text">
+          <option value="task">Task</option>
+          <option value="event">Event</option>
+          <option value="note">Note</option>
+          <option value="research">Research</option>
+        </select>
 
-      <input type="text" id="item-text" name="item" placeholder="Hey! Enter an item here" required>
-      <input id="datepicker" type="text" placeholder="Pick a date" name="setDate" data-date="{{date}}">
+        <input type="text" id="item-text" name="item" placeholder="Hey! Enter an item here" required>
+        <input id="datepicker" type="text" placeholder="Pick a date" name="setDate" data-date="{{date}}">
 
-      <button id="add-item" type="submit">Add Task</button>
-    </form>
+        <button id="add-item" type="submit">Add Task</button>
+      </form>
 
-	  <p>Show me my:</p>
+      <p>Show me my:</p>
 
       <ul id="home-list">
         <li><a href="/view-today">Day View</a></li>

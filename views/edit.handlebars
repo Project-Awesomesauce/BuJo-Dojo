@@ -1,14 +1,12 @@
-
 <div class="container" id="wrap">
 
   {{!--task view--}}
   <div class="row">
     <div class="twelve columns top-page-margin">
 
-      <input type="text" value="{{tasks.item}}" id="edit-text" name="item" required>
-      {{!--<input id="datepicker" type="text" placeholder="{{tasks.setDate}}" name="setDate">--}}
+      <input type="text" value="{{tasks.item}}" id="edit-text" name="item" required>Í
       <input id="datepicker" type="text" placeholder="Pick a date" name="setDate" data-date="{{date}}">
- 
+
       <select name="completed" class="dropdown-text" id="completed">        
         {{#if tasks.completed}}
           <option value="true" selected="selected">Completed</option>
