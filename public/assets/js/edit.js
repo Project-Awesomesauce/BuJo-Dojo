@@ -2,9 +2,10 @@ $(document).ready(function () {
   function updateItem(event) {
     event.preventDefault();
     var date = $('#datepicker').val();
-    if (date === '') {
-      date = $('#datepicker').attr('placeholder');
-    }
+    // if (date === '') {
+    //   date = moment($('#datepicker').attr('date')).format('yyyy-mm-dd');
+    // }
+    console.log('edit date' + date);
     var data = {
       id: $(this).data('id'),
       item: $('#edit-text').val().trim(),

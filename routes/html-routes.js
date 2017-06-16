@@ -7,7 +7,6 @@ module.exports = function (app) {
       var hbsObject = {
         tasks: dbTask
       };
-      console.log(hbsObject);
       res.render('home', hbsObject);
     });
   });
@@ -26,10 +25,12 @@ module.exports = function (app) {
         id: req.params.id
       }
     }).then(function (dbTask) {
+      var date = moment(dbTask.dataValues.setDate).add(6, 'hours').format('YYYY-MM-DD');
       var hbsObject = {
-        tasks: dbTask
+        tasks: dbTask,
+        date: date
       };
-      console.log(hbsObject);
+      console.log(date);
       res.render('edit', hbsObject);
     });
   });
@@ -53,7 +54,6 @@ module.exports = function (app) {
         tasks: dbTask
       };
       res.render('date', hbsObject);
-      console.log(dbTask);
     });
   });
 
@@ -68,7 +68,6 @@ module.exports = function (app) {
         tasks: dbTask,
         date: req.params.date
       };
-      console.log('view-date', hbsObject.date);
       res.render('date', hbsObject);
     });
   });
