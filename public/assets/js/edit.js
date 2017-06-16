@@ -16,7 +16,8 @@ $(document).ready(function () {
       url: '/api/tasks',
       data: data,
       success: function () {
-        document.location = '/view-today';
+        var url = '../view-date/' + date;
+        document.location = url;
       }
     });
   }
