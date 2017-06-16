@@ -210,6 +210,10 @@ td, th {
     margin: -1px;
 }
 
+.ui-datepicker {
+    /*display: none*/
+}
+
 
 /* Leave footer CSS at the bottom */
 /*----------------------------------------------*/

@@ -4,7 +4,7 @@ var should = require('chai').should();
 describe('BuJo Dojo Forms', function () {
   this.timeout(15000);
 
-  var url = 'http://localhost:8080';
+  var url = 'http://localhost:8080/view-today';
 
   describe('Start Page', function () {
     it('should show form when loaded', function (done) {
