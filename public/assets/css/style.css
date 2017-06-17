@@ -150,6 +150,7 @@ a:hover {
 .date {
     font-weight: 600;
     text-decoration: underline;
+    padding: 10px;
 }
 
 ul {
