@@ -13,6 +13,15 @@ h1 {
     text-align: center;
 }
 
+.active {
+    border: 2px solid turquoise;
+    padding: 5px;
+}
+
+#navbar .nav {
+    margin: 2px;
+}
+
 .top-page-margin {
     margin-top: 15%;
 }

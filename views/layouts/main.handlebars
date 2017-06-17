@@ -3,14 +3,16 @@
 
 <head>
   <title>BuJo Dojo</title>
-  <meta charset="UTF-8"> {{!-- For Formspree --}}
+  <meta charset="UTF-8"> 
+  {{!-- For Formspree --}}
   <meta name="referrer" content="origin">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="../assets/css/normalize.css">
   <link rel="stylesheet" href="../assets/css/skeleton.css">
-  <link rel="stylesheet" href="../assets/css/style.css"> {{!-- jQuery --}}
+  <link rel="stylesheet" href="../assets/css/style.css"> 
+  {{!-- jQuery --}}
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
   {{!--jQuery UI --}}
@@ -21,9 +23,9 @@
   <script src="https://use.fontawesome.com/0a2ce55563.js"></script>
 
   <!-- Favicon -->
-  <link rel="icon" href="./assets/images/favicon.ico" type="image/gif" sizes="16x16"> {{!-- Google Fonts --}}
-  <link href="https://fonts.googleapis.com/css?family=Megrim|Raleway:400,600" rel="stylesheet">
-  
+  <link rel="icon" href="./assets/images/favicon.ico" type="image/gif" sizes="16x16"> 
+  {{!-- Google Fonts --}}
+  <link href="https://fonts.googleapis.com/css?family=Megrim|Raleway:400,600" rel="stylesheet"> 
   {{!-- Using Moment.js in the browser --}}
   <script src="https://momentjs.com/downloads/moment-with-locales.js"></script>
   <script>
@@ -42,18 +44,20 @@
           </a>
         </div>
       </div>
-      <div class="row">
-        <div class="one column">
-          <a href="/">Home</a>
-        </div>
-        <div class="one column">
-          <a href="/view-today">Daily</a>
-        </div>
-        <div class="one column">
-          <a href="/view-week">Weekly</a>
-        </div>
-        <div class="one column">
-          <a href="/contact">Contact</a>
+      <div id="navbar">
+        <div class="row">
+          <div class="two columns nav">
+            <a id="nav-home" href="/">Home</a>
+          </div>
+          <div class="two columns nav">
+            <a id="nav-today" href="/view-today">Daily</a>
+          </div>
+          <div class="two columns nav">
+            <a id="nav-week" href="/view-week">Weekly</a>
+          </div>
+          <div class="two columns nav">
+            <a id="nav-contact" href="/contact">Contact</a>
+          </div>
         </div>
       </div>
     </div>
