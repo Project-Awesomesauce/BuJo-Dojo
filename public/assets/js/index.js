@@ -51,7 +51,6 @@ $(document).ready(function () {
       if (completed === undefined) {
         completed = false;
       }
-      console.log(JSON.parse(completed));
       icon = assignCategory(category, JSON.parse(completed));
       var iconListItem = $('<i>').addClass('fa-li fa');
       iconListItem.addClass(icon);
