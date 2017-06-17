@@ -13,11 +13,6 @@ h1 {
     text-align: center;
 }
 
-.active {
-    border: 2px solid turquoise;
-    padding: 5px;
-}
-
 #navbar .nav {
     margin: 2px;
 }
@@ -57,6 +52,16 @@ a:hover {
 
 #new-item {
     padding-top: 0px !important;
+}
+
+#nav-home, #nav-today, #nav-week, #nav-contact {
+    padding: 10px 15px;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.active {
+    border: 2px solid turquoise;
 }
 
 .dropdown-text {
@@ -139,13 +144,15 @@ a:hover {
 }
 
 .weekly-view {
-    border: solid;
-    padding: 5px;
-    margin: 5px;
+    border: solid 1px #D1D1D1;
+    padding: 10px;
+    margin: 15px;
 }
 
 .date {
-    font-weight: bold;
+    font-weight: 600;
+    text-decoration: underline;
+    padding: 10px;
 }
 
 ul {
@@ -166,6 +173,14 @@ button, .button-primary {
     background-color: white !important;
     color: black !important;
     border: 1px solid #D1D1D1 !important;
+}
+
+.contact-header {
+    text-align: center;
+}
+
+.center-me {
+    text-align: center;
 }
 
 /* Datepicker calendar styling */

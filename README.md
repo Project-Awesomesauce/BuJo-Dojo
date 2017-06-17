@@ -65,7 +65,7 @@ Anyone who wants to keep better track of their day to day (and who wants to be h
 
 + [Skeleton](http://www.getskeleton.com "Skeleton") - CSS Framework
 
-+ [jQuery UI - Datepicker](https://jqueryui.com/datepicker/ "jQuery UI - Datepicker") - Date-selection using pop-up calendar
++ [jQuery UI - Datepicker](https://jqueryui.com/datepicker/ "jQuery UI - Datepicker") - Date selection using pop-up calendar
 
 + [Formspree.io](https://formspree.io/ "Formspree.io") - Functional HTML Forms (used for Contact form)
 
