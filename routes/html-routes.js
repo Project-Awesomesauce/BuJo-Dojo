@@ -30,7 +30,6 @@ module.exports = function (app) {
         tasks: dbTask,
         date: date
       };
-      console.log(date);
       res.render('edit', hbsObject);
     });
   });
