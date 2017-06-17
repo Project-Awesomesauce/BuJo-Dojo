@@ -55,7 +55,9 @@ a:hover {
 }
 
 #nav-home, #nav-today, #nav-week, #nav-contact {
-    padding: 5px 15px;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    font-size: 12px;
 }
 
 .active {
