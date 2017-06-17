@@ -59,7 +59,29 @@ $(document).ready(function () {
     });
   }
 
+  function setActive() {
+    var page = window.location.pathname;
+    switch (page) {
+      case '/':
+        $('#nav-home').addClass('active');
+        break;
+      case '/view-today':
+        $('#nav-today').addClass('active');
+        break;
+      case '/view-week':
+        $('#nav-week').addClass('active');
+        break;
+      case '/contact':
+        $('#nav-contact').addClass('active');
+        break;
+      default:
+        $('#navbar a').removeClass();
+    }
+  }
+
+
   selectIcon();
+  setActive();
   $(document).on('click', '#add-item', addItem);
   $(document).on('click', '.destroy-item', destroyItem);
   $(document).on('click', '.edit-item', editItem);

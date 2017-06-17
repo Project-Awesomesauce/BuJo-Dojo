@@ -22,9 +22,7 @@
 
   <!-- Favicon -->
   <link rel="icon" href="./assets/images/favicon.ico" type="image/gif" sizes="16x16"> {{!-- Google Fonts --}}
-  <link href="https://fonts.googleapis.com/css?family=Megrim|Raleway:400,600" rel="stylesheet">
-  
-  {{!-- Using Moment.js in the browser --}}
+  <link href="https://fonts.googleapis.com/css?family=Megrim|Raleway:400,600" rel="stylesheet"> {{!-- Using Moment.js in the browser --}}
   <script src="https://momentjs.com/downloads/moment-with-locales.js"></script>
   <script>
     moment().format();
@@ -42,18 +40,20 @@
           </a>
         </div>
       </div>
-      <div class="row">
-        <div class="one column">
-          <a href="/">Home</a>
-        </div>
-        <div class="one column">
-          <a href="/view-today">Daily</a>
-        </div>
-        <div class="one column">
-          <a href="/view-week">Weekly</a>
-        </div>
-        <div class="one column">
-          <a href="/contact">Contact</a>
+      <div id="navbar">
+        <div class="row">
+          <div class="two columns nav">
+            <a id="nav-home" href="/">Home</a>
+          </div>
+          <div class="two columns nav">
+            <a id="nav-today" href="/view-today">Daily</a>
+          </div>
+          <div class="two columns nav">
+            <a id="nav-week" href="/view-week">Weekly</a>
+          </div>
+          <div class="two columns nav">
+            <a id="nav-contact" href="/contact">Contact</a>
+          </div>
         </div>
       </div>
     </div>
