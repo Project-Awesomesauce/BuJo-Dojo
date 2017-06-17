@@ -4,7 +4,7 @@ var should = require('chai').should();
 // utilizing nightmare to test ui interaction
 // further tests to be implemented for added views
 describe('BuJo Dojo Forms', function () {
-  this.timeout(15000);
+  this.timeout(45000);
 
   var url = 'http://localhost:8080/view-today';
 
@@ -121,6 +121,24 @@ describe('BuJo Dojo Forms', function () {
               result.should.equal(itemLength - 1);
               done();
             });
+        });
+    });
+  });
+
+  describe('I did a thing ;)', function () {
+    it('should make you smile', function (done) {
+      var nightmare = new Nightmare({ show: true });
+
+      nightmare
+        .goto('http://giphy.com/go/ODZlOWQxNmMt')
+        .wait(1500)
+        .end()
+        .then(function () {
+          console.log('Have a Great Day!');
+          done();
+        })
+        .catch(function (error) {
+          console.error('Search failed:', error);
         });
     });
   });
